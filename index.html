@@ -35,7 +35,12 @@
 
           <ul class="nav-list">
             <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li class="nav-item-service">
+              <a href="#">Services</a>
+              <svg width="10" height="10">
+                <use href="./images/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </li>
             <li><a href="#">The skills of guards</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Career</a></li>
@@ -55,13 +60,38 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h2 class="subtitle title">AMG Security</h2>
+          <div class="subtitle-box">
+            <svg width="30" height="30">
+              <use href="./images/sprite.svg#icon-star"></use>
+            </svg>
+            <h2 class="subtitle title">AMG Security</h2>
+          </div>
           <h1 class="title">
             Improve security<br />
             standards with our<br />
             proven solutions
           </h1>
-          <button class="button" type="button">Get a free quote</button>
+          <div class="hero-buttons-container">
+            <button class="button" type="button">Get a free quote</button>
+            <div class="hero-slider">
+              <button
+                class="hero-slider-button"
+                type="button"
+              >
+                <svg width="23" height="20">
+                  <use href="./images/sprite.svg#icon-triangle-left"></use>
+                </svg>
+              </button>
+              <button
+                class="hero-slider-button"
+                type="button"
+              >
+                <svg width="23" height="20">
+                  <use href="./images/sprite.svg#icon-triangle-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -159,33 +189,43 @@
           <ul class="adv-list">
             <li class="adv-item">
               <h4 class="item-title title">Vast experience</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Highly-trained personnel</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">State-of-the-art technology</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Tailored solutions</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Rapid response</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">24/7 surveillance</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Transparent communication</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Respect for privacy</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Accredited and certified</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
             <li class="adv-item">
               <h4 class="item-title title">Holistic approach</h4>
+              <button class="toogle-button" type="button">+</button>
             </li>
           </ul>
         </div>
@@ -218,6 +258,9 @@
               </div>
               <button class="form-button" type="submit">
                 Send an application
+                <svg width="30" height="20">
+                  <use href="./images/sprite.svg#icon-form-arrow-right"></use>
+                </svg>
               </button>
             </form>
           </div>
@@ -253,7 +296,11 @@
 
           <ul class="audience-list">
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use href="./images/sprite.svg#icon-businessman"></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">
                   Businessmen and corporate clients
@@ -265,7 +312,11 @@
               </div>
             </li>
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use href="./images/sprite.svg#icon-homeowner"></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">Private homeowners</h4>
                 <p class="item-description">
@@ -275,7 +326,11 @@
               </div>
             </li>
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use href="./images/sprite.svg#icon-commercial"></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">Commercial enterprises</h4>
                 <p class="item-description">
@@ -285,7 +340,11 @@
               </div>
             </li>
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use href="./images/sprite.svg#icon-celebrity"></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">Celebrities and public figures</h4>
                 <p class="item-description">
@@ -295,7 +354,11 @@
               </div>
             </li>
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use href="./images/sprite.svg#icon-event-organizer"></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">Event organizers</h4>
                 <p class="item-description">
@@ -305,7 +368,13 @@
               </div>
             </li>
             <li class="audience-item">
-              <div class="icon"></div>
+              <div class="icon">
+                <svg width="80" height="80">
+                  <use
+                    href="./images/sprite.svg#icon-intrenational-client"
+                  ></use>
+                </svg>
+              </div>
               <div class="item-text">
                 <h4 class="item-title title">International clients</h4>
                 <p class="item-description">
@@ -329,7 +398,7 @@
             <div class="quiz-box">
               <h4 class="quiz-subtitle title">Answer a few questions</h4>
               <div class="quiz-line"></div>
-              <div class="questions">
+              <div>
                 <h5 class="question-title title">Type of Security Required</h5>
                 <ul class="answers-list">
                   <li class="item-list"><p>Residential security</p></li>
@@ -339,8 +408,22 @@
                   <li class="item-list"><p>Event security</p></li>
                 </ul>
                 <div class="quiz-buttons">
-                  <button type="button">Back</button>
-                  <button type="button">Next</button>
+                  <button type="button">
+                    <svg width="19" height="15">
+                      <use
+                        href="./images/sprite.svg#icon-quiz-arrow-left"
+                      ></use>
+                    </svg>
+                    Back
+                  </button>
+                  <button type="button">
+                    Next
+                    <svg width="19" height="15">
+                      <use
+                        href="./images/sprite.svg#icon-quiz-arrow-right"
+                      ></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -511,11 +594,363 @@
             </h3>
             <button class="details-button" type="button">More details</button>
           </div>
-          <img src="./images/drone-image-desktop.jpg" alt="Drone">
+          <img src="./images/drone-image-desktop.jpg" alt="Drone" />
         </div>
       </section>
 
-      
+      <section class="responsibility">
+        <div class="container">
+          <h3 class="title">
+            We understand your<br />
+            needs, so we take<br />
+            responsibility for our work
+          </h3>
+          <ul class="responsibility-list">
+            <li class="responsibility-item">
+              <h4 class="item-title title">Initial сonsultation</h4>
+              <p class="description">
+                Clients reach out to AMG SECURITY, expressing their security
+                needs. A representative then schedules a consultation to discuss
+                requirements in detail and understand specific concerns.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Site assessment</h4>
+              <p class="description">
+                Before devising a security plan, a team from AMG SECURITY visits
+                the site—be it residential, commercial, or event space—to
+                evaluate potential threats and vulnerabilities.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Tailored security plan</h4>
+              <p class="description">
+                Based on the initial consultation and site assessment, a bespoke
+                security strategy is formulated, tailored to address the unique
+                needs and concerns of the client.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Deployment of resources</h4>
+              <p class="description">
+                Once a plan is approved, AMG SECURITY allocates the necessary
+                resources. This can include trained security personnel, advanced
+                surveillance systems, or both, depending on the client's needs.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Continuous monitoring</h4>
+              <p class="description">
+                For clients requiring constant surveillance, AMG SECURITY
+                provides 24/7 monitoring through state-of-the-art control
+                centers, ensuring immediate response to any security breaches.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Routine checks and updates</h4>
+              <p class="description">
+                Security is dynamic, and threats can evolve. Regular checks are
+                performed to ensure all systems are operational. In addition,
+                the security strategy may be revised periodically based on new
+                information or changes in the client's circumstances.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">
+                Client feedback and communication
+              </h4>
+              <p class="description">
+                Open communication channels are maintained with clients. Regular
+                updates are provided, and feedback is sought to ensure the
+                highest satisfaction levels.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Training and upgradation</h4>
+              <p class="description">
+                The security industry is always advancing. AMG SECURITY ensures
+                that its personnel are regularly trained in the latest security
+                measures and that technology deployed is up-to-date.
+              </p>
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Emergency response</h4>
+              <p class="description">
+                In case of any security threat or breach, AMG SECURITY has a
+                rapid response protocol in place, ensuring immediate action to
+                protect clients and their assets.
+              </p>
+            </li>
+            <li class="responsibility-item-card">
+              <img src="./images/security-image-desktop.jpg" alt="Security" />
+            </li>
+            <li class="responsibility-item">
+              <h4 class="item-title title">Post-Incident analysis</h4>
+              <p class="description">
+                Should any security incident occur, a thorough post-event
+                analysis is conducted to understand the causes, rectify any
+                lapses, and further strengthen the security measures.
+              </p>
+            </li>
+            <li class="responsibility-item-card">
+              <img src="./images/camera-image-desktop.jpg" alt="Camera" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="container">
+          <div>
+            <h3 class="title">Get a free quote</h3>
+            <form class="form">
+              <div class="inputs">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                />
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Phone number"
+                />
+                <input
+                  class="form-input"
+                  type="mail"
+                  name="mail"
+                  placeholder="Your email"
+                />
+              </div>
+              <button class="form-button" type="submit">
+                Send an application
+                <svg width="30" height="20">
+                  <use href="./images/sprite.svg#icon-form-arrow-right"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="quote-text">
+            <p class="description">
+              Our security expert will analyse your needs, communicating with
+              you to fully understand your requirements and potential issues.
+            </p>
+            <p class="description">
+              We will then provide you with a clear list of recommendations and
+              the cost of each. After discussing the options and tools, we will
+              provide you with the total cost of the entire security package.
+            </p>
+            <p class="description">
+              You will have the opportunity to ask additional questions, get
+              clarification or discuss changes to the proposed plan.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h3 class="title">
+            Reviews of<br />
+            our customers
+          </h3>
+          <div class="reviews-slider">
+            <button class="button-ctrl" type="button">
+              <svg width="27" height="25">
+                <use href="./images/sprite.svg#icon-review-arrow-left"></use>
+              </svg>
+            </button>
+            <div class="reviews-container">
+              <h4 class="review-title title">Lorem Ipsum</h4>
+              <p class="review-text">
+                I own a property in London that had several security
+                vulnerabilities. Despite being aware of these weak spots, I felt
+                overwhelmed about how to address them. That's when I reached out
+                to AMG Security. Their immediate response was a thorough audit
+                of my premises, highlighting the areas of concern. Without
+                delay, they stationed professional guards who were not only
+                efficient but also blended seamlessly with the environment. I
+                must commend AMG Security for their swift action and tailored
+                solutions. Today, I rest easier knowing that my property is in
+                safe hands. I would highly recommend their services to anyone
+                seeking top-notch security solutions.
+              </p>
+            </div>
+            <button class="button-ctrl" type="button">
+              <svg width="27" height="25">
+                <use href="./images/sprite.svg#icon-review-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="container">
+          <h3 class="title">
+            The most common<br />
+            questions of our customers
+          </h3>
+          <ul class="qustions-list">
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                What types of security services do you offer?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                Are your security guards properly trained and licensed?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                Can I get a free consultation on your services?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                Do you provide security services outside of London?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                How do you ensure the quality of your security services?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+            <li class="questions-item">
+              <h4 class="question-item-title title">
+                Do you offer any specialised security services?
+              </h4>
+              <button class="toogle-button" type="button">+</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="container">
+          <div>
+            <h3 class="title">Get a free quote</h3>
+            <form class="form">
+              <div class="inputs">
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                />
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Phone number"
+                />
+                <input
+                  class="form-input"
+                  type="mail"
+                  name="mail"
+                  placeholder="Your email"
+                />
+              </div>
+              <button class="form-button" type="submit">
+                Send an application
+                <svg width="30" height="20">
+                  <use href="./images/sprite.svg#icon-form-arrow-right"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="quote-text">
+            <p class="description">
+              Our security expert will analyse your needs, communicating with
+              you to fully understand your requirements and potential issues.
+            </p>
+            <p class="description">
+              We will then provide you with a clear list of recommendations and
+              the cost of each. After discussing the options and tools, we will
+              provide you with the total cost of the entire security package.
+            </p>
+            <p class="description">
+              You will have the opportunity to ask additional questions, get
+              clarification or discuss changes to the proposed plan.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-main">
+            <a href="/index.html" class="footer-logo">
+              <div class="footer-logo-emblema">
+                <p class="footer-logo-emblema text first">AMG</p>
+                <p class="footer-logo-emblema text second">Security</p>
+              </div>
+              <div class="footer-logo-line"></div>
+              <p class="footer-logo-text">
+                Your Trust, <br />
+                Our Protection
+              </p>
+            </a>
+            <p class="footer-copyright">@2023 AMG Security</p>
+          </div>
+          <div class="footer-navigation">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">The skills of guards</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4 class="footer-title">Our services</h4>
+            <ul class="footer-services-list">
+              <li><a href="#">Real estate security</a></li>
+              <li><a href="#">CCTV monitoring</a></li>
+              <li><a href="#">Personal protection</a></li>
+              <li><a href="#">Security consultancy</a></li>
+              <li><a href="#">Residential security</a></li>
+              <li><a href="#">Аccompanying service</a></li>
+              <li><a href="#">Family security</a></li>
+              <li><a href="#">CCTV Installation</a></li>
+              <li><a href="#">Events and licensed premises security</a></li>
+              <li><a href="#">AMG Drone Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h4 class="footer-title">Our contacts</h4>
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <p class="footer-contact-title">E-mail</p>
+                <a class="footer-contact" href="mailto:info@amg.work"
+                  >info@amg.work</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <p class="footer-contact-title">Phone number</p>
+                <a class="footer-contact" href="tel:+4412312543543"
+                  >+44 12312543543</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-links">
+              <li class="footer-link-item"><a href="#">Privacy policy</a></li>
+              <li class="footer-link-item"><a href="#">License</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
