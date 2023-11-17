@@ -1,5 +1,42 @@
+@font-face {
+  font-family: "Forum";
+  src: url("../fonts/Forum.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
 body {
-  font-family: "Gilroy-Regular", sans-serif;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
 }
 
 .visually-hidden {
@@ -200,7 +237,7 @@ button {
   padding: 32px 61px;
   background: #fff;
   color: #141414;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
   border: none;
@@ -349,19 +386,26 @@ button {
   color: #fff;
 }
 
-.adv-list {
+.advantages-lists {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 37px;
+  gap: 37px;
+}
+
+.adv-list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   row-gap: 20px;
 }
 
 .adv-item {
+  background-color: #f7f7f7;
+}
+
+.adv-item-title {
   padding: 31px 50px 30px 43px;
-  width: calc((100% - 37px) / 2);
   display: flex;
   justify-content: space-between;
-  background-color: #f7f7f7;
 }
 
 .advantages .item-title {
@@ -379,6 +423,37 @@ button {
   line-height: 0.6;
   background-color: transparent;
   border: none;
+}
+
+.adv-description {
+  padding-left: 43px;
+  padding-right: 43px;
+  opacity: 0;
+  transform: translateY(-100%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.adv-item.active .adv-description {
+  padding-bottom: 26px;
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 200px;
+}
+
+.adv-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.adv-description-text {
+  margin-top: 26px;
+  color: rgba(20, 20, 20, 0.7);
+  font-size: 18px;
+  line-height: 1.22;
 }
 
 /* Quote */
@@ -428,7 +503,7 @@ button {
   border: 0.8px solid #141414;
   background: #0f252e;
   color: #fff;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
   font-size: 19px;
   text-align: left;
 }
@@ -499,7 +574,7 @@ button {
 .audience .item-description {
   width: 483px;
   color: #fff;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -575,7 +650,7 @@ button {
 
 .item-list p {
   color: #0f252e;
-  font-family: "Gilroy-Medium", sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -734,7 +809,7 @@ button {
   padding-bottom: 30px;
   width: 237px;
   color: #141414;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
   background-color: #fff;
@@ -767,7 +842,7 @@ button {
   background-color: #fff;
   color: #141414;
   text-transform: uppercase;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   border: none;
 }
@@ -821,7 +896,7 @@ button {
   margin-right: auto;
   width: 320px;
   color: #fff;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 18px;
 }
 
@@ -850,6 +925,7 @@ button {
 .reviews-container {
   padding: 35px 73px 61px;
   width: 967px;
+  height: 300px;
   background-color: #fff;
 }
 
@@ -875,7 +951,7 @@ button {
 .review-text {
   color: #141414;
   text-align: center;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.2;
 }
@@ -899,10 +975,6 @@ button {
   gap: 30px;
 }
 
-.questions-item {
-
-}
-
 .question-item-container {
   padding: 28px 65px 28px 54px;
   display: flex;
@@ -911,13 +983,26 @@ button {
 }
 
 .question-item-answer {
+  padding-left: 50px;
+  opacity: 0;
+  transform: translateY(-100%);
+  border: 1px solid #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease, padding 300ms ease, opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.questions-item.active .question-item-answer {
   padding: 40px 50px;
-  border: 1px solid #FFF;
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 200px;
 }
 
 .question-item-answer .answer-text {
   width: 600px;
-  color: #FFF;
+  color: #fff;
   font-size: 18px;
   line-height: 1.4;
 }
@@ -1013,7 +1098,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -1022,7 +1107,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
@@ -1038,13 +1123,13 @@ button {
 
 .footer-contact-title {
   color: #fff;
-  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 700;
   font-size: 16px;
 }
 
 .footer-contact {
   color: #fff;
-  font-family: "Gilroy-Light", sans-serif;
+  font-weight: 300;
   font-size: 12px;
 }
 

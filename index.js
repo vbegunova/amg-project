@@ -1,5 +1,12 @@
 const reviewsContainer = document.querySelector(".reviews-container");
 const reviews = reviewsContainer.querySelectorAll(".review-box");
+const questionsContainer = document.querySelector(".qustions-list");
+const toggleButtonsQuestions =
+  questionsContainer.querySelectorAll(".toogle-button");
+
+const advantagesContainer = document.querySelector(".advantages-lists");
+const toggleButtonsAdvantages =
+  advantagesContainer.querySelectorAll(".toogle-button");
 
 let currentReview = 0;
 
@@ -41,8 +48,26 @@ const prevButton = document.querySelector(
 nextButton.addEventListener("click", nextReview);
 prevButton.addEventListener("click", prevReview);
 
-const questionsContainer = document.querySelector(".questions-item");
-const toggleButtons = questionsContainer.querySelectorAll(".toogle-button");
-const answers = questionsContainer.querySelectorAll(".question-item-answer");
+toggleButtonsQuestions.forEach((button) => {
+  button.addEventListener("click", function () {
+    if (button.textContent === "+") {
+      button.textContent = "-";
+    } else {
+      button.textContent = "+";
+    }
+    const questionItem = button.closest(".questions-item");
+    questionItem.classList.toggle("active");
+  });
+});
 
-toggleButtons.addEventListener("click", toggleAnswer);
+toggleButtonsAdvantages.forEach((button) => {
+  button.addEventListener("click", function () {
+    if (button.textContent === "+") {
+      button.textContent = "-";
+    } else {
+      button.textContent = "+";
+    }
+    const advantageItem = button.closest(".adv-item");
+    advantageItem.classList.toggle("active");
+  });
+});
