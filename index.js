@@ -40,3 +40,9 @@ const prevButton = document.querySelector(
 
 nextButton.addEventListener("click", nextReview);
 prevButton.addEventListener("click", prevReview);
+
+const questionsContainer = document.querySelector(".questions-item");
+const toggleButtons = questionsContainer.querySelectorAll(".toogle-button");
+const answers = questionsContainer.querySelectorAll(".question-item-answer");
+
+toggleButtons.addEventListener("click", toggleAnswer);

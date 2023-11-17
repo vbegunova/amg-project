@@ -900,10 +900,26 @@ button {
 }
 
 .questions-item {
+
+}
+
+.question-item-container {
   padding: 28px 65px 28px 54px;
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+}
+
+.question-item-answer {
+  padding: 40px 50px;
+  border: 1px solid #FFF;
+}
+
+.question-item-answer .answer-text {
+  width: 600px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .questions-item .question-item-title {
