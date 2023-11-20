@@ -472,6 +472,7 @@ button {
 .quote .title {
   margin-bottom: 20px;
   color: #141414;
+  text-transform: uppercase;
 }
 
 .inputs {
@@ -564,6 +565,10 @@ button {
   height: 80px;
 }
 
+/* .audience-item:nth-child(6) .icon {
+  padding-left: 10px;
+} */
+
 .audience .item-title {
   margin-bottom: 6px;
   text-align: left;
@@ -599,6 +604,7 @@ button {
   padding-top: 36px;
   color: rgba(20, 20, 20, 0.7);
   font-size: 28px;
+  opacity: 0.7;
 }
 
 .quiz-container {
@@ -740,7 +746,7 @@ button {
 }
 
 .services-item {
-  padding: 42px 100px 44px 50px;
+  padding: 42px 55px 55px 50px;
   display: flex;
   flex-direction: column;
   width: calc((100% - 22px) / 2);
@@ -833,6 +839,7 @@ button {
 }
 
 .our-development .title {
+  width: 744px;
   margin-bottom: 28px;
   color: #fff;
 }
@@ -854,6 +861,7 @@ button {
 }
 
 .responsibility .title {
+  text-align: center;
   margin-bottom: 46px;
   color: #141414;
 }
@@ -925,7 +933,6 @@ button {
 .reviews-container {
   padding: 35px 73px 61px;
   width: 967px;
-  height: 300px;
   background-color: #fff;
 }
 
