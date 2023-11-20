@@ -478,7 +478,7 @@ button {
 .inputs {
   margin-bottom: 15px;
   display: flex;
-  gap: 18px;
+  justify-content: space-between;
 }
 
 .form-input {
