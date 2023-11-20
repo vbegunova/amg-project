@@ -8,6 +8,47 @@ const advantagesContainer = document.querySelector(".advantages-lists");
 const toggleButtonsAdvantages =
   advantagesContainer.querySelectorAll(".toogle-button");
 
+const titles = [
+  "Improve security<br />standards with our<br />proven solutions",
+  "AMG's promise:<br />precision security,<br />no hidden costs! ",
+  "Take advantage of<br />premium security services<br />tailored to your needs",
+];
+
+let currentTitle = 0;
+const titleElement = document.querySelector(".hero-title");
+
+function changeTitle() {
+  titleElement.innerHTML = titles[currentTitle];
+}
+
+changeTitle();
+
+function nextTitle() {
+  currentTitle++;
+  if (currentTitle >= titles.length) {
+    currentTitle = 0;
+  }
+  changeTitle();
+}
+
+function prevTitle() {
+  currentTitle--;
+  if (currentTitle < 0) {
+    currentTitle = titles.length - 1;
+  }
+  changeTitle();
+}
+
+const nextButtonHero = document.querySelector(
+  ".hero-slider-button:last-of-type"
+);
+const prevButtonHero = document.querySelector(
+  ".hero-slider-button:first-of-type"
+);
+
+nextButtonHero.addEventListener("click", nextTitle);
+prevButtonHero.addEventListener("click", prevTitle);
+
 let currentReview = 0;
 
 function showReview(reviewIndex) {
