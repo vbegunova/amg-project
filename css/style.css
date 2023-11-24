@@ -234,7 +234,10 @@ button {
 }
 
 .hero .button {
-  padding: 32px 61px;
+  width: 332px;
+  height: 94px;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   color: #141414;
   font-weight: 700;
@@ -404,6 +407,7 @@ button {
 
 .adv-item-title {
   padding: 31px 50px 30px 43px;
+  height: 92px;
   display: flex;
   justify-content: space-between;
 }
@@ -476,6 +480,7 @@ button {
 }
 
 .inputs {
+  width: 636px;
   margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
@@ -483,7 +488,11 @@ button {
 
 .form-input {
   padding: 25px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
+  height: 74px;
   color: #141414;
   font-size: 19px;
   border: 1.6px solid #141414;
@@ -496,11 +505,12 @@ button {
 }
 
 .form-button {
+  width: 636px;
+  height: 74px;
   padding: 25px 29px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   border: 0.8px solid #141414;
   background: #0f252e;
   color: #fff;
@@ -553,7 +563,7 @@ button {
 }
 
 .audience-item {
-  width: calc((100% - 66px) / 2);
+  width: 585px;
   display: flex;
   align-items: center;
   gap: 29px;
@@ -565,9 +575,9 @@ button {
   height: 80px;
 }
 
-/* .audience-item:nth-child(6) .icon {
+.audience-item:nth-child(6) .icon {
   padding-left: 10px;
-} */
+}
 
 .audience .item-title {
   margin-bottom: 6px;
@@ -649,7 +659,7 @@ button {
   padding-top: 9px;
   padding-bottom: 9px;
   text-align: center;
-  width: calc((100% - 9px) / 2);
+  width: 288px;
   background-color: #fff;
   border-radius: 5px;
 }
@@ -707,19 +717,19 @@ button {
   display: flex;
   gap: 20px;
   align-items: center;
-  width: calc((100% - 30px) / 2);
-  border: 1px solid #141414;
-  background-color: #141414;
-  color: #fff;
+  width: 603px;
+  background-color: #fff;
+  color: #141414;
 }
 
 .principles-item .number {
   margin-bottom: 0;
+  color: #141414;
 }
 
 .principles-item .item-title {
   margin-bottom: 4px;
-  color: #fff;
+  color: #141414;
   font-size: 28px;
   line-height: normal;
   text-align: left;
@@ -749,7 +759,7 @@ button {
   padding: 42px 55px 55px 50px;
   display: flex;
   flex-direction: column;
-  width: calc((100% - 22px) / 2);
+  width: 607px;
   height: 452px;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,9 +821,11 @@ button {
 
 .info-button {
   margin-top: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 237px;
+  height: 84px;
   color: #141414;
   font-weight: 700;
   font-size: 21px;
@@ -845,7 +857,11 @@ button {
 }
 
 .details-button {
-  padding: 31px 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  height: 93px;
   background-color: #fff;
   color: #141414;
   text-transform: uppercase;
@@ -874,36 +890,39 @@ button {
 
 .responsibility-item {
   padding: 32px 30px 23px 30px;
-  width: calc((100% - 9px * 2) / 3);
+  width: 406px;
   height: 246px;
   text-align: center;
 }
 
 .responsibility-item-card {
-  width: calc((100% - 9px * 2) / 3);
+  width: 406px;
   height: 246px;
   text-align: center;
 }
 
 .responsibility-item:nth-child(odd) {
   background-color: #0f252e;
+  color: #fff;
 }
 
 .responsibility-item:nth-child(even) {
-  background-color: #141414;
+  background-color: #F3F3F3;
+  color: #0F252E;
 }
 
 .responsibility-item .item-title {
   margin-bottom: 15px;
-  color: #fff;
   font-size: 28px;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  line-height: 0.9;
 }
 
 .responsibility-item .description {
   margin-left: auto;
   margin-right: auto;
   width: 320px;
-  color: #fff;
   font-weight: 300;
   font-size: 18px;
 }
@@ -983,8 +1002,10 @@ button {
 }
 
 .question-item-container {
+  height: 92px;
   padding: 28px 65px 28px 54px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background-color: #fff;
 }
