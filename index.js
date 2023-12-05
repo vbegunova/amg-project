@@ -1,3 +1,5 @@
+// Hero title slider
+
 const reviewsContainer = document.querySelector(".reviews-container");
 const reviews = reviewsContainer.querySelectorAll(".review-box");
 const questionsContainer = document.querySelector(".qustions-list");
@@ -53,6 +55,8 @@ const prevButtonHero = document.querySelector(
 
 nextButtonHero.addEventListener("click", nextTitle);
 prevButtonHero.addEventListener("click", prevTitle);
+
+// Reviews slider
 
 let currentReview = 0;
 
@@ -118,38 +122,38 @@ toggleButtonsAdvantages.forEach((button) => {
   });
 });
 
-// --------------------------------
+// Advantages slider
 
 const advantagesSection = document.querySelector(".advantages");
-const slides = document.querySelectorAll(".mobile.adv-list .adv-item");
-const dotsContainer = document.querySelector(".slider-dots");
+const advantagesList = document.querySelector(".mobile.adv-list");
+const advantagesSlides = document.querySelectorAll(
+  ".mobile.adv-list .adv-item"
+);
+const dotsContainer = document.querySelector(".advantages .slider-dots");
 
-let currentSlide = 0;
+let advCurrentIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
 
-function showSlide(index, direction) {
-  slides.forEach((slide, i) => {
-    if (i === index) {
-      slide.style.display = "block";
-      if (direction === "next") {
-        slide.style.transform = "translateX(100%)";
-      } else if (direction === "prev") {
-        slide.style.transform = "translateX(-100%)"; 
-      } else {
-        slide.style.transform = "none"; 
-      }
-      setTimeout(() => {
-        slide.style.transform = "none"; 
-      }, 50);
-    } else {
-      slide.style.display = "none";
-    }
+let clicksCount = 9;
+let advGap = 10;
+
+const slideWidth = advantagesSlides[0].offsetWidth;
+
+advantagesSlides.forEach((slide, index) => {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  setActiveDot(advCurrentIndex);
+  dot.addEventListener("click", () => {
+    advCurrentIndex = index;
+    setActiveDot(advCurrentIndex);
+    showSlide(advCurrentIndex);
   });
-}
+  dotsContainer.appendChild(dot);
+});
 
 function setActiveDot(index) {
-  const dots = document.querySelectorAll(".dot");
+  const dots = document.querySelectorAll(".advantages .dot");
   dots.forEach((dot, i) => {
     if (i === index) {
       dot.classList.add("active");
@@ -159,46 +163,129 @@ function setActiveDot(index) {
   });
 }
 
-function nextSlide() {
-  const nextIndex = (currentSlide + 1) % slides.length;
-  showSlide(nextIndex, 'next');
-  setActiveDot(nextIndex);
-  currentSlide = nextIndex;
+function showSlide(index) {
+  advantagesList.style.transition = "transform 0.4s ease-in-out";
+  advantagesList.style.transform = `translateX(-${
+    index * slideWidth + advGap * index
+  }px)`;
 }
 
-function prevSlide() {
-  const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(prevIndex, 'prev');
-  setActiveDot(prevIndex);
-  currentSlide = prevIndex;
+function advPrevSlide() {
+  if (advCurrentIndex > 0) {
+    advCurrentIndex--;
+    setActiveDot(advCurrentIndex);
+    showSlide(advCurrentIndex);
+  }
 }
 
+function advNextSlide() {
+  if (advCurrentIndex < clicksCount) {
+    advCurrentIndex++;
+    setActiveDot(advCurrentIndex);
+    showSlide(advCurrentIndex);
+  }
+}
 
-// Додавання точок
-slides.forEach((slide, index) => {
-  const dot = document.createElement("span");
-  dot.classList.add("dot");
-  dot.addEventListener("click", () => {
-    currentSlide = index;
-    showSlide(currentSlide);
-    setActiveDot(currentSlide);
+advantagesList.addEventListener("transitionend", () => {
+  advantagesSlides.forEach((slide) => {
+    slide.style.transition = "";
   });
-  dotsContainer.appendChild(dot);
 });
 
-// Початковий слайд
-showSlide(currentSlide);
-setActiveDot(currentSlide);
-
-advantagesSection.addEventListener("touchstart", (e) => {
+advantagesList.addEventListener("touchstart", (e) => {
   touchStartX = e.touches[0].clientX;
 });
 
-advantagesSection.addEventListener("touchend", (e) => {
+advantagesList.addEventListener("touchend", (e) => {
   touchEndX = e.changedTouches[0].clientX;
   if (touchEndX < touchStartX) {
-    nextSlide();
+    advNextSlide();
   } else if (touchEndX > touchStartX) {
-    prevSlide();
+    advPrevSlide();
+  }
+});
+
+// Audience slider
+
+const audienceSection = document.querySelector(".audience");
+const audienceList = document.querySelector(".audience-list");
+const audienceSlides = document.querySelectorAll(
+  ".audience-list .audience-item"
+);
+const audienceDotsContainer = document.querySelector(".audience .slider-dots");
+
+let audienceCurrentIndex = 0;
+let audienceTouchStartX = 0;
+let audienceTouchEndX = 0;
+
+let audienceClicksCount = 4;
+let audienceGap = 14;
+const audienceSlideWidth = audienceSlides[0].offsetWidth;
+
+audienceSlides.forEach((slide, index) => {
+  if (index >= audienceSlides.length - 1) {
+    return;
+  }
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  audienceSetActiveDot(audienceCurrentIndex);
+  dot.addEventListener("click", () => {
+    audienceCurrentIndex = index;
+    audienceSetActiveDot(audienceCurrentIndex);
+    audienceShowSlide(audienceCurrentIndex);
+  });
+  audienceDotsContainer.appendChild(dot);
+});
+
+function audienceSetActiveDot(index) {
+  const dots = document.querySelectorAll(".audience .dot");
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+function audienceShowSlide(index) {
+  audienceList.style.transition = "transform 0.4s ease-in-out";
+  audienceList.style.transform = `translateX(-${
+    index * audienceSlideWidth + audienceGap * index
+  }px)`;
+}
+
+function audiencePrevSlide() {
+  if (audienceCurrentIndex > 0) {
+    audienceCurrentIndex--;
+    audienceSetActiveDot(audienceCurrentIndex);
+    audienceShowSlide(audienceCurrentIndex);
+  }
+}
+
+function audienceNextSlide() {
+  if (audienceCurrentIndex < audienceClicksCount) {
+    audienceCurrentIndex++;
+    audienceSetActiveDot(audienceCurrentIndex);
+    audienceShowSlide(audienceCurrentIndex);
+  }
+}
+
+audienceList.addEventListener("transitionend", () => {
+  audienceSlides.forEach((slide) => {
+    slide.style.transition = "";
+  });
+});
+
+audienceList.addEventListener("touchstart", (e) => {
+  touchStartX = e.touches[0].clientX;
+});
+
+audienceList.addEventListener("touchend", (e) => {
+  touchEndX = e.changedTouches[0].clientX;
+  if (touchEndX < touchStartX) {
+    audienceNextSlide();
+  } else if (touchEndX > touchStartX) {
+    audiencePrevSlide();
   }
 });
