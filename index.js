@@ -11,7 +11,7 @@ const toggleButtonsAdvantages =
   advantagesContainer.querySelectorAll(".toogle-button");
 
 const titles = [
-  "Improve security<br />standards with our<br />proven solutions",
+  "Improve security standards with our proven solutions",
   "AMG's promise:<br />precision security,<br />no hidden costs! ",
   "Take advantage of<br />premium security services<br />tailored to your needs",
 ];
@@ -20,10 +20,12 @@ let currentTitle = 0;
 const titleElement = document.querySelector(".hero-title");
 
 function changeTitle() {
-  if (currentTitle === 2) {
-    titleElement.style.width = "100%";
-  } else {
-    titleElement.style.width = "621px";
+  if(window.innerWidth >= 1440) {
+    if (currentTitle === 2) {
+      titleElement.style.width = "100%";
+    } else {
+      titleElement.style.width = "621px";
+    }
   }
   titleElement.innerHTML = titles[currentTitle];
 }
