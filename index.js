@@ -94,9 +94,17 @@ const nextButton = document.querySelector(
 const prevButton = document.querySelector(
   ".reviews-slider .button-ctrl:first-of-type"
 );
+const mobileNextButton = document.querySelector(
+  ".mobile.reviews-button-ctrl .button-ctrl:last-of-type"
+);
+const mobilePrevButton = document.querySelector(
+  ".mobile.reviews-button-ctrl .button-ctrl:first-of-type"
+);
 
 nextButton.addEventListener("click", nextReview);
 prevButton.addEventListener("click", prevReview);
+mobileNextButton.addEventListener("click", nextReview);
+mobilePrevButton.addEventListener("click", prevReview);
 
 toggleButtonsQuestions.forEach((button) => {
   button.addEventListener("click", function () {
@@ -287,5 +295,250 @@ audienceList.addEventListener("touchend", (e) => {
     audienceNextSlide();
   } else if (touchEndX > touchStartX) {
     audiencePrevSlide();
+  }
+});
+
+// Principles slider
+
+const principlesSection = document.querySelector(".principles");
+const principlesList = document.querySelector(".principles-list");
+const principlesSlides = document.querySelectorAll(".principles-item");
+const principlesDotsContainer = document.querySelector(
+  ".principles .slider-dots"
+);
+
+let principlesCurrentIndex = 0;
+let principlesTouchStartX = 0;
+let principlesTouchEndX = 0;
+
+let principlesClicksCount = 3;
+let principlesGap = 10;
+
+const principlesSlideWidth = principlesSlides[0].offsetWidth;
+
+principlesSlides.forEach((slide, index) => {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  principlesSetActiveDot(principlesCurrentIndex);
+  dot.addEventListener("click", () => {
+    principlesCurrentIndex = index;
+    principlesSetActiveDot(principlesCurrentIndex);
+    principlesShowSlide(principlesCurrentIndex);
+  });
+  principlesDotsContainer.appendChild(dot);
+});
+
+function principlesSetActiveDot(index) {
+  const dots = document.querySelectorAll(".principles .dot");
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+function principlesShowSlide(index) {
+  principlesList.style.transition = "transform 0.4s ease-in-out";
+  principlesList.style.transform = `translateX(-${
+    index * principlesSlideWidth + principlesGap * index
+  }px)`;
+}
+
+function principlesPrevSlide() {
+  if (principlesCurrentIndex > 0) {
+    principlesCurrentIndex--;
+    principlesSetActiveDot(principlesCurrentIndex);
+    principlesShowSlide(principlesCurrentIndex);
+  }
+}
+
+function principlesNextSlide() {
+  if (principlesCurrentIndex < principlesClicksCount) {
+    principlesCurrentIndex++;
+    principlesSetActiveDot(principlesCurrentIndex);
+    principlesShowSlide(principlesCurrentIndex);
+  }
+}
+
+principlesList.addEventListener("transitionend", () => {
+  principlesSlides.forEach((slide) => {
+    slide.style.transition = "";
+  });
+});
+
+principlesList.addEventListener("touchstart", (e) => {
+  principlesTouchStartX = e.touches[0].clientX;
+});
+
+principlesList.addEventListener("touchend", (e) => {
+  principlesTouchEndX = e.changedTouches[0].clientX;
+  if (principlesTouchEndX < principlesTouchStartX) {
+    principlesNextSlide();
+  } else if (principlesTouchEndX > principlesTouchStartX) {
+    principlesPrevSlide();
+  }
+});
+
+// Services slider
+
+const servicesSection = document.querySelector(".services");
+const servicesList = document.querySelector(".services-list");
+const servicesSlides = document.querySelectorAll(".services-item");
+const servicesDotsContainer = document.querySelector(".services .slider-dots");
+
+let servicesCurrentIndex = 0;
+let servicesTouchStartX = 0;
+let servicesTouchEndX = 0;
+
+let servicesClicksCount = 3;
+let servicesGap = 10;
+
+const servicesSlideWidth = servicesSlides[0].offsetWidth;
+
+servicesSlides.forEach((slide, index) => {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  servicesSetActiveDot(servicesCurrentIndex);
+  dot.addEventListener("click", () => {
+    servicesCurrentIndex = index;
+    servicesSetActiveDot(servicesCurrentIndex);
+    servicesShowSlide(servicesCurrentIndex);
+  });
+  servicesDotsContainer.appendChild(dot);
+});
+
+function servicesSetActiveDot(index) {
+  const dots = document.querySelectorAll(".services .dot");
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+function servicesShowSlide(index) {
+  servicesList.style.transition = "transform 0.4s ease-in-out";
+  servicesList.style.transform = `translateX(-${
+    index * servicesSlideWidth + servicesGap * index
+  }px)`;
+}
+
+function servicesPrevSlide() {
+  if (servicesCurrentIndex > 0) {
+    servicesCurrentIndex--;
+    servicesSetActiveDot(servicesCurrentIndex);
+    servicesShowSlide(servicesCurrentIndex);
+  }
+}
+
+function servicesNextSlide() {
+  if (servicesCurrentIndex < servicesClicksCount) {
+    servicesCurrentIndex++;
+    servicesSetActiveDot(servicesCurrentIndex);
+    servicesShowSlide(servicesCurrentIndex);
+  }
+}
+
+servicesList.addEventListener("transitionend", () => {
+  servicesSlides.forEach((slide) => {
+    slide.style.transition = "";
+  });
+});
+
+servicesList.addEventListener("touchstart", (e) => {
+  servicesTouchStartX = e.touches[0].clientX;
+});
+
+servicesList.addEventListener("touchend", (e) => {
+  servicesTouchEndX = e.changedTouches[0].clientX;
+  if (servicesTouchEndX < servicesTouchStartX) {
+    servicesNextSlide();
+  } else if (servicesTouchEndX > servicesTouchStartX) {
+    servicesPrevSlide();
+  }
+});
+
+// Responsibility slider
+
+const responsibilitySection = document.querySelector(".responsibility");
+const responsibilityList = document.querySelector(".responsibility-list");
+const responsibilitySlides = document.querySelectorAll(".responsibility-item");
+const responsibilityDotsContainer = document.querySelector(".responsibility .slider-dots");
+
+let responsibilityCurrentIndex = 0;
+let responsibilityTouchStartX = 0;
+let responsibilityTouchEndX = 0;
+
+let responsibilityClicksCount = 3;
+let responsibilityGap = 10;
+
+const responsibilitySlideWidth = responsibilitySlides[0].offsetWidth;
+
+responsibilitySlides.forEach((slide, index) => {
+  const dot = document.createElement("div");
+  dot.classList.add("dot");
+  responsibilitySetActiveDot(responsibilityCurrentIndex);
+  dot.addEventListener("click", () => {
+    responsibilityCurrentIndex = index;
+    responsibilitySetActiveDot(responsibilityCurrentIndex);
+    responsibilityShowSlide(responsibilityCurrentIndex);
+  });
+  responsibilityDotsContainer.appendChild(dot);
+});
+
+function responsibilitySetActiveDot(index) {
+  const dots = document.querySelectorAll(".responsibility .dot");
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add("active");
+    } else {
+      dot.classList.remove("active");
+    }
+  });
+}
+
+function responsibilityShowSlide(index) {
+  responsibilityList.style.transition = "transform 0.4s ease-in-out";
+  responsibilityList.style.transform = `translateX(-${
+    index * responsibilitySlideWidth + responsibilityGap * index
+  }px)`;
+}
+
+function responsibilityPrevSlide() {
+  if (responsibilityCurrentIndex > 0) {
+    responsibilityCurrentIndex--;
+    responsibilitySetActiveDot(responsibilityCurrentIndex);
+    responsibilityShowSlide(responsibilityCurrentIndex);
+  }
+}
+
+function responsibilityNextSlide() {
+  if (responsibilityCurrentIndex < responsibilityClicksCount) {
+    responsibilityCurrentIndex++;
+    responsibilitySetActiveDot(responsibilityCurrentIndex);
+    responsibilityShowSlide(responsibilityCurrentIndex);
+  }
+}
+
+responsibilityList.addEventListener("transitionend", () => {
+  responsibilitySlides.forEach((slide) => {
+    slide.style.transition = "";
+  });
+});
+
+responsibilityList.addEventListener("touchstart", (e) => {
+  responsibilityTouchStartX = e.touches[0].clientX;
+});
+
+responsibilityList.addEventListener("touchend", (e) => {
+  responsibilityTouchEndX = e.changedTouches[0].clientX;
+  if (responsibilityTouchEndX < responsibilityTouchStartX) {
+    responsibilityNextSlide();
+  } else if (responsibilityTouchEndX > responsibilityTouchStartX) {
+    responsibilityPrevSlide();
   }
 });
