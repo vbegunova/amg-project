@@ -1244,14 +1244,13 @@ button {
   }
 }
 
-/* .quiz-container {
-  background-color: #0f252e;
-} */
-
-
-.quiz-container .container {
+.quiz-container {
   background-color: #0f252e;
 }
+
+/* .quiz-container .container {
+  background-color: #0f252e;
+} */
 
 @media screen and (min-width: 1440px) {
   .quiz-container .container {
