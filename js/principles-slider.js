@@ -1,9 +1,9 @@
 const principlesSection = document.querySelector(".principles");
 const principlesList = document.querySelector(".principles-list");
-const principlesSlides = document.querySelectorAll(
-  ".principles-item"
+const principlesSlides = document.querySelectorAll(".principles-item");
+const principlesDotsContainer = document.querySelector(
+  ".principles .slider-dots"
 );
-const principlesDotsContainer = document.querySelector(".principles .slider-dots");
 
 let principlesCurrentIndex = 0;
 let principlesTouchStartX = 0;

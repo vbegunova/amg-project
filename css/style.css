@@ -1027,12 +1027,12 @@ button {
     display: block;
     width: 527px;
   }
-  
+
   .quote-text .description {
     color: #141414;
     font-size: 18px;
   }
-  
+
   .quote-text .description:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1248,13 +1248,12 @@ button {
   background-color: #0f252e;
 }
 
-/* .quiz-container .container {
-  background-color: #0f252e;
-} */
-
 @media screen and (min-width: 1440px) {
   .quiz-container .container {
     display: flex;
+  }
+
+  .quiz-container {
     background-color: #fff;
   }
 }
@@ -1305,7 +1304,7 @@ button {
   .quiz-line {
     margin-bottom: 22px;
     width: 579px;
-  }  
+  }
 }
 
 .quiz .question-title {
@@ -1345,7 +1344,7 @@ button {
   }
 }
 
-.item-list {
+.quiz .item-list {
   padding-top: 9px;
   padding-bottom: 9px;
   text-align: center;
@@ -1355,12 +1354,12 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
-  .item-list {
+  .quiz .item-list {
     width: 288px;
   }
 }
 
-.item-list p {
+.quiz .item-list p {
   color: #0f252e;
   font-weight: 500;
   font-size: 12px;
@@ -1368,7 +1367,7 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
-  .item-list p {
+  .quiz .item-list p {
     font-weight: 500;
     font-size: 18px;
   }
@@ -1385,7 +1384,7 @@ button {
 @media screen and (min-width: 1440px) {
   .quiz-buttons {
     width: 100%;
-  }  
+  }
 }
 
 .quiz-arrow-icon {
@@ -1744,7 +1743,6 @@ button {
 
 /* Our Development */
 .our-development {
-  
 }
 
 @media screen and (min-width: 1440px) {
@@ -1757,7 +1755,12 @@ button {
 .our-development .container {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: linear-gradient(180deg, rgba(15, 37, 46, 0.80) 0%, rgba(15, 37, 46, 0.80) 100%), url('../images/drone-background-mobile.jpg');
+  background-image: linear-gradient(
+      180deg,
+      rgba(15, 37, 46, 0.8) 0%,
+      rgba(15, 37, 46, 0.8) 100%
+    ),
+    url("../images/drone-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2233,7 +2236,6 @@ button {
   }
 }
 
-
 /* Footer */
 .footer {
   padding-top: 30px;
@@ -2322,7 +2324,7 @@ button {
   .footer-logo-emblema .text.second {
     font-size: 34px;
     letter-spacing: -1px;
-  }  
+  }
 }
 
 .footer-logo-line {
@@ -2399,7 +2401,7 @@ button {
     margin-right: 102px;
     gap: 12px;
     font-size: 16px;
-  }  
+  }
 }
 
 .footer-services-list {
@@ -2525,4 +2527,812 @@ button {
     font-size: 18px;
     opacity: 0.6;
   }
+}
+
+/* About Us Hero */
+.about_us-hero {
+  padding-top: 252px;
+  padding-bottom: 213px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.7) 0%,
+      rgba(20, 20, 20, 0.7) 100%
+    ),
+    url("../images/about-us/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about_us-hero .title {
+  margin-bottom: 22px;
+  width: 537px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.about_us-hero .text {
+  margin-bottom: 22px;
+  width: 434px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about_us-hero .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 94px;
+  background: #fff;
+  color: #141414;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* About Us About */
+.about_us-about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about_us-about img {
+  border-radius: 3px;
+}
+
+.about_us-about .title {
+  margin-bottom: 46px;
+  color: #141414;
+  font-size: 81px;
+}
+
+.about_us-about .info-boxes {
+  background-color: #f7f7f7;
+}
+
+.about_us-about .info-boxes .top {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-right: 50px;
+  display: flex;
+  gap: 79px;
+  align-items: center;
+}
+
+.about_us-about .info-boxes .text {
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about_us-about .info-boxes .bottom {
+  padding-top: 25px;
+  padding-bottom: 29px;
+  padding-left: 38px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 49px;
+  align-items: center;
+}
+
+.about_us-about .info-boxes .bottom .text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* About Us Why prestigious */
+.about_us-why-prestigious {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #0f252e;
+}
+
+.about_us-why-prestigious .title {
+  margin-bottom: 39px;
+  width: 763px;
+  font-size: 81px;
+  color: #fff;
+}
+
+.about_us-why-prestigious .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+}
+
+.about_us-why-prestigious .item {
+  padding: 31px 50px 26px 42px;
+  width: 599px;
+  height: 240px;
+  background-color: #fff;
+  color: #141414;
+}
+
+.about_us-why-prestigious .item .title {
+  margin-bottom: 22px;
+  color: #141414;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about_us-why-prestigious .item .line {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  background: rgba(20, 20, 20, 0.2);
+}
+
+.about_us-why-prestigious .item .description {
+  color: rgba(20, 20, 20, 0.7);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* About Us Abour our guards */
+.about_us-about-guards {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #141414;
+}
+
+.about_us-about-guards img {
+  border-radius: 3px;
+}
+
+.about_us-about-guards .title-text-image-box {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_us-about-guards .title {
+  margin-bottom: 31px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.about_us-about-guards .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.about_us-about-guards .description .text:nth-child(2) {
+  width: 610px;
+  margin-bottom: 26px;
+}
+
+.about_us-about-guards .description .text:nth-child(3) {
+  width: 653px;
+}
+
+/* About Us Why trust us */
+.about_us-why-trust-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about_us-why-trust-us img {
+  border-radius: 3px;
+}
+
+.about_us-why-trust-us .title {
+  margin-bottom: 46px;
+  color: #141414;
+  font-size: 81px;
+}
+
+.about_us-why-trust-us .info-boxes {
+  background-color: #0f252e;
+}
+
+.about_us-why-trust-us .info-boxes .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about_us-why-trust-us .info-boxes .top {
+  padding: 27px 50px 27px 27px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.about_us-why-trust-us .info-boxes .middle {
+  padding: 27px 27px 27px 54px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 72px;
+}
+
+.about_us-why-trust-us .info-boxes .bottom {
+  padding: 27px 59px 27px 23px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+/* CCTV Monitoring Hero */
+.cctv_monitoring-hero {
+  padding-top: 262px;
+  padding-bottom: 236px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.6) 0%,
+      rgba(20, 20, 20, 0.6) 100%
+    ),
+    url("../images/cctv-monitoring/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cctv_monitoring-hero .title {
+  margin-bottom: 12px;
+  width: 537px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.cctv_monitoring-hero .text {
+  margin-bottom: 21px;
+  width: 434px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cctv_monitoring-hero .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 94px;
+  background: #fff;
+  color: #141414;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* CCTV Monitoring About service */
+.cctv_monitoring-about-service {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cctv_monitoring-about-service .title {
+  margin-bottom: 20px;
+  color: #141414;
+  font-size: 81px;
+  text-align: center;
+}
+
+.cctv_monitoring-about-service .text {
+  margin-bottom: 53px;
+  color: #141414;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.cctv_monitoring-about-service .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.cctv_monitoring-about-service .item {
+  padding-top: 31px;
+  width: 607px;
+  height: 388px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cctv_monitoring-about-service .item:nth-child(1) {
+  padding-right: 79px;
+  padding-left: 79px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.75) 0%,
+      rgba(20, 20, 20, 0.75) 100%
+    ),
+    url("../images/cctv-monitoring/about-service/background-first.jpg");
+}
+
+.cctv_monitoring-about-service .item:nth-child(2) {
+  padding-right: 95px;
+  padding-left: 95px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.75) 0%,
+      rgba(20, 20, 20, 0.75) 100%
+    ),
+    url("../images/cctv-monitoring/about-service/background-second.jpg");
+}
+
+.cctv_monitoring-about-service .item:nth-child(3) {
+  padding-right: 85px;
+  padding-left: 85px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.75) 0%,
+      rgba(20, 20, 20, 0.75) 100%
+    ),
+    url("../images/cctv-monitoring/about-service/background-third.jpg");
+}
+
+.cctv_monitoring-about-service .item:nth-child(4) {
+  padding-right: 80px;
+  padding-left: 80px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.75) 0%,
+      rgba(20, 20, 20, 0.75) 100%
+    ),
+    url("../images/cctv-monitoring/about-service/background-fourth.jpg");
+}
+
+.cctv_monitoring-about-service .item .title {
+  margin-bottom: 6px;
+  color: #fff;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.cctv_monitoring-about-service .item .description {
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* CCTV Monitoring Stages */
+.cctv_monitoring-stages {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #0f252e;
+}
+
+.cctv_monitoring-stages .title {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.cctv_monitoring-stages .list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 31px;
+}
+
+.cctv_monitoring-stages .item {
+  padding-top: 31px;
+  padding-left: 30px;
+  padding-bottom: 49px;
+  width: 600px;
+  height: 178px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: #fff;
+}
+
+.cctv_monitoring-stages .item:nth-child(1) {
+  padding-right: 83px;
+}
+
+.cctv_monitoring-stages .item:nth-child(2) {
+  padding-right: 63px;
+}
+
+.cctv_monitoring-stages .item:nth-child(3) {
+  padding-right: 114px;
+}
+
+.cctv_monitoring-stages .item:nth-child(4) {
+  padding-right: 134px;
+}
+
+.cctv_monitoring-stages .item:nth-child(5) {
+  padding-top: 24px;
+  padding-right: 60px;
+  padding-bottom: 31px;
+}
+
+.cctv_monitoring-stages .item:nth-child(6) {
+  padding-right: 76px;
+}
+
+.cctv_monitoring-stages .item .number {
+  color: #141414;
+  text-align: center;
+  font-family: "Forum", serif;
+  font-size: 81px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.cctv_monitoring-stages .item .title {
+  margin-bottom: 1px;
+  color: #141414;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cctv_monitoring-stages .item .text {
+  color: #141414;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Guards Skills Hero */
+.guards_skills-hero {
+  padding-top: 260px;
+  padding-bottom: 236px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.6) 0%,
+      rgba(20, 20, 20, 0.6) 100%
+    ),
+    url("../images/guards-skills/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.guards_skills-hero .title {
+  margin-bottom: 14px;
+  width: 600px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.guards_skills-hero .text {
+  margin-bottom: 21px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.guards_skills-hero .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 94px;
+  background: #fff;
+  color: #141414;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Guards Skills Selection process */
+.guards_skills-selection-process {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.guards_skills-selection-process img {
+  border-radius: 3px;
+}
+
+.guards_skills-selection-process .title {
+  width: 939px;
+  margin-bottom: 45px;
+  color: #141414;
+  font-size: 81px;
+}
+
+.guards_skills-selection-process .info-boxes {
+  background-color: #0f252e;
+}
+
+.guards_skills-selection-process .info-boxes .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.guards_skills-selection-process .info-boxes .top {
+  padding: 27px 106px 27px 27px;
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+
+.guards_skills-selection-process .info-boxes .middle {
+  padding: 27px 27px 27px 54px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 72px;
+  align-items: center;
+}
+
+.guards_skills-selection-process .info-boxes .bottom {
+  padding: 27px 59px 23px 27px;
+  display: flex;
+  gap: 52px;
+  align-items: center;
+}
+
+/* Guards skills Technologies */
+.guards_skills-technologies {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #141414;
+}
+
+.guards_skills-technologies img {
+  border-radius: 3px;
+}
+
+.guards_skills-technologies .title-text-image-box {
+  margin-bottom: 65px;
+  display: flex;
+  gap: 97px;
+}
+
+.guards_skills-technologies .title {
+  margin-bottom: 22px;
+  width: 544px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.guards_skills-technologies .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Guards skills Commitment */
+.guards_skills-commitment {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.guards_skills-commitment img {
+  border-radius: 3px;
+}
+
+.guards_skills-commitment .title {
+  color: #141414;
+  font-size: 81px;
+}
+
+.guards_skills-commitment .info-boxes {
+  background-color: #f7f7f7;
+}
+
+.guards_skills-commitment .info-boxes .text {
+  color: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.guards_skills-commitment .info-boxes .top {
+  padding: 27px 28px 27px 27px;
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.guards_skills-commitment .info-boxes .bottom {
+  padding: 25px 32px 27px 38px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 49px;
+}
+
+/* Career Hero */
+.career-hero {
+  padding-top: 290px;
+  padding-bottom: 276px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(20, 20, 20, 0.6) 0%,
+      rgba(20, 20, 20, 0.6) 100%
+    ),
+    url("../images/career/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.career-hero .title {
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 81px;
+  text-transform: uppercase;
+}
+
+.career-hero .text {
+  margin-bottom: 21px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.career-hero .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 332px;
+  height: 94px;
+  background: #fff;
+  color: #141414;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Career Opportunities */
+.career-opportunities {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.career-opportunities .title {
+  margin-bottom: 20px;
+  color: #141414;
+  font-size: 81px;
+}
+
+.career-opportunities .text {
+  margin-bottom: 43px;
+  color: #141414;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.career-opportunities .list {
+  display: flex;
+  gap: 18px;
+}
+
+.career-opportunities .item {
+  padding-top: 30px;
+  padding-right: 47px;
+  padding-left: 39px;
+  width: 400px;
+  height: 415px;
+  background-color: #0f252e;
+}
+
+.career-opportunities .item .title {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.career-opportunities .item:nth-child(3) .title {
+  width: 342px;
+}
+
+.career-opportunities .item .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Career Cooperation */
+.career-cooperation {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #141414;
+}
+
+.career-cooperation img {
+  border-radius: 3px;
+}
+
+.career-cooperation .container {
+  display: flex;
+  gap: 48px;
+}
+
+.career-cooperation .title {
+  margin-bottom: 24px;
+  width: 457px;
+  color: #fff;
+  font-size: 81px;
+}
+
+.career-cooperation .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.career-cooperation .text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/* Career Current opening */
+.career-current-opening {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.career-current-opening .title {
+  margin-bottom: 20px;
+  color: #141414;
+  font-size: 81px;
+}
+
+.career-current-opening .text {
+  margin-bottom: 28px;
+  color: #141414;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.career-current-opening .list {
+  display: flex;
+  gap: 18px;
+}
+
+.career-current-opening .item {
+  padding-top: 27px;
+  padding-right: 24px;
+  padding-left: 26px;
+  width: 400px;
+  height: 246px;
+  background-color: #0f252e;
+}
+
+.career-current-opening .item .title {
+  color: #fff;
+  font-size: 38px;
+  line-height: 0.9;
+}
+
+.career-current-opening .item-list {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: disc;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
 }
