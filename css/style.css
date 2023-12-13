@@ -2772,6 +2772,23 @@ button {
   padding-top: 34px;
 }
 
+/* About us Quote */
+.about_us.quote .title {
+  margin-bottom: 17px;
+  width: 522px;
+  text-transform: none;
+}
+
+.about_us.quote .quote-text {
+  width: 419px;
+}
+
+/* Service page Quote */
+.service_page.quote .title {
+  margin-bottom: 17px;
+  text-transform: none;
+}
+
 /* CCTV Monitoring Hero */
 .service_page-hero {
   padding-top: 272px;
@@ -2848,6 +2865,7 @@ button {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
+  text-align: center;
 }
 
 .cctv_monitoring.service_page-about-service .text {
@@ -3091,6 +3109,12 @@ button {
   padding-right: 175px;
 }
 
+/* Real EState Security Quote */
+.estate_security.service_page.quote .title {
+  width: 453px;
+  margin-bottom: 21px;
+}
+
 /* Family Security Security Hero */
 .family_security.service_page-hero {
   background-image: linear-gradient(
@@ -3173,6 +3197,16 @@ button {
 
 .family_security.service_page-stages .item:nth-child(6) {
   padding-right: 75px;
+}
+
+/* Family Security Quote */
+.family_security.service_page.quote .title {
+  margin-bottom: 16px;
+  width: 410px;
+}
+
+.family_security.service_page.quote .quote-text {
+  width: 494px;
 }
 
 /* Escort Service Security Hero */
@@ -3258,6 +3292,17 @@ button {
 
 .escort_service.service_page-stages .item:nth-child(6) {
   padding-right: 38px;
+}
+
+/* Escort service Quote */
+.escort_service.service_page.quote .title {
+  margin-bottom: 23px;
+  font-size: 71px;
+  width: 550px;
+}
+
+.escort_service.service_page.quote .quote-text {
+  width: 432px;
 }
 
 /* Personal Protection Security Hero */
@@ -3348,6 +3393,12 @@ button {
   padding-right: 42px;
 }
 
+/* Personal Protection Quote */
+.personal_protection.service_page.quote .title {
+  margin-bottom: 6px;
+  width: 409px;
+}
+
 /* Security consultancy Security Hero */
 .security_consultancy.service_page-hero {
   background-image: linear-gradient(
@@ -3402,6 +3453,16 @@ button {
       rgba(20, 20, 20, 0.65) 100%
     ),
     url("../images/security-consultancy/about-service/background-third.jpg");
+}
+
+/* Security consiltancy Quote */
+.security_consultancy.service_page.quote .title {
+  margin-bottom: 10px;
+  width: 473px;
+}
+
+.security_consultancy.service_page.quote .quote-text {
+  width: 432px;
 }
 
 
@@ -3520,6 +3581,16 @@ button {
   width: 371px;
 }
 
+/* Residential security Quote */
+.residential_security.service_page.quote .title {
+  margin-bottom: 10px;
+  width: 457px;
+}
+
+.residential_security.service_page.quote .quote-text {
+  width: 422px;
+}
+
 /* CCTV Installation Hero */
 .cctv_installation.service_page-hero {
   background-image: linear-gradient(
@@ -3603,6 +3674,16 @@ button {
 
 .cctv_installation.service_page-stages .item:nth-child(6) .title {
   width: 371px;
+}
+
+/* CCTV Installation Quote */
+.cctv_installation.service_page.quote .title {
+  margin-bottom: 17px;
+  width: 471px;
+}
+
+.cctv_installation.service_page.quote .quote-text {
+  width: 471px;
 }
 
 /* Events security Hero */
@@ -3691,6 +3772,16 @@ button {
   padding-right: 88px;
 }
 
+/* Events security Quote */
+.events_security.service_page.quote .title {
+  margin-bottom: 17px;
+  width: 548px;
+}
+
+.events_security.service_page.quote .quote-text {
+  width: 526px;
+}
+
 /* Drone security Hero */
 .drone_security.service_page-hero {
   background-image: linear-gradient(
@@ -3776,6 +3867,16 @@ button {
   padding-right: 88px;
 }
 
+/* Drone security Quote */
+.drone_security.service_page.quote .title {
+  margin-bottom: 15px;
+  font-size: 71px;
+  width: 546px;
+}
+
+.drone_security.service_page.quote .quote-text {
+  width: 526px;
+}
 
 /* Guards Skills Hero */
 .guards_skills-hero {
@@ -4146,3 +4247,12 @@ button {
   font-weight: 400;
   line-height: normal;
 }
+
+/* Career Quote */
+.career.quote .title {
+  width: 529px;
+  margin-bottom: 19px;
+  font-size: 63px;
+  text-transform: none;
+}
+
