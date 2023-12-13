@@ -27,6 +27,16 @@
             </p>
           </a>
 
+          <button
+            type="button"
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="30" height="20">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li><a href="./about-us.html">About us</a></li>
             <li class="nav-item-service">
@@ -668,10 +678,10 @@
             <h3 class="title">We will select reliable security for you</h3>
             <p class="label">Filling time - 1 minute</p>
           </div>
-          </div>
+        </div>
 
-          <div class="quiz-container">
-            <div class="container">
+        <div class="quiz-container">
+          <div class="container">
             <div class="quiz-box">
               <h4 class="quiz-subtitle title">Answer a few questions</h4>
               <div class="quiz-line"></div>
@@ -795,7 +805,9 @@
                   personalized safety, discreet companionship, whether
                   traveling, at meetings, or in your daily life.
                 </p>
-                <a href="./personal-protection.html" class="info-link">More info</a>
+                <a href="./personal-protection.html" class="info-link"
+                  >More info</a
+                >
               </li>
               <li class="services-item">
                 <h4 class="item-title title">Security consultancy</h4>
@@ -805,7 +817,9 @@
                   security solutions for businesses, personal assets, and
                   events.
                 </p>
-                <a href="./security-consultancy.html" class="info-link">More info</a>
+                <a href="./security-consultancy.html" class="info-link"
+                  >More info</a
+                >
               </li>
               <li class="services-item">
                 <h4 class="item-title title">Residential security</h4>
@@ -814,7 +828,9 @@
                   discreet personnel, advanced technology, comprehensive
                   coverage for ultimate peace and tranquility at home.
                 </p>
-                <a href="./residential-security.html" class="info-link">More info</a>
+                <a href="./residential-security.html" class="info-link"
+                  >More info</a
+                >
               </li>
               <li class="services-item">
                 <h4 class="item-title title">Аccompanying service</h4>
@@ -842,7 +858,9 @@
                   aftercare for comprehensive protection and peace of mind of
                   companionship.
                 </p>
-                <a href="./cctv-installation.html" class="info-link">More info</a>
+                <a href="./cctv-installation.html" class="info-link"
+                  >More info</a
+                >
               </li>
               <li class="services-item">
                 <h4 class="item-title title">
@@ -1307,6 +1325,67 @@
           </div>
         </div>
       </section>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="navigation">
+            <a href="/index.html" class="logo">
+              <div class="logo-emblema">
+                <p class="logo-emblema text first">AMG</p>
+                <p class="logo-emblema text second">Security</p>
+              </div>
+              <div class="logo-line"></div>
+              <p class="logo-text">
+                Your Trust, <br />
+                Our Protection
+              </p>
+            </a>
+            <button
+              type="button"
+              class="cross-button menu-toggle js-close-menu"
+            >
+              <svg width="30" height="30">
+                <use href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mobile-menu-navigation">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./about-us.html">About us</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link service" href="./cctv-monitoring.html">
+                Services
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-arrow-down-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./guards-skills.html">The skills of guards</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Reviews</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./career.html">Career</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Blog</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="langs">
+            <p class="lang-label active">Eng</p>
+            <div class="lang-line"></div>
+            <p class="lang-label">Ru</p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -1386,5 +1465,6 @@
     <script src="./js/responsibility-slider.js"></script>
     <script src="./js/reviews-slider.js"></script>
     <script src="./js/question-toogle.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@
     <header>
       <div class="container header-nav">
         <nav class="navigation">
-          <a href="./index.html" class="logo">
+          <a href="/index.html" class="logo">
             <div class="logo-emblema">
               <p class="logo-emblema text first">AMG</p>
               <p class="logo-emblema text second">Security</p>
@@ -27,6 +27,16 @@
             </p>
           </a>
 
+          <button
+            type="button"
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="30" height="20">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
           <ul class="nav-list">
             <li><a href="./about-us.html">About us</a></li>
             <li class="nav-item-service">
@@ -337,6 +347,67 @@
           </ul>
         </div>
       </section>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="navigation">
+            <a href="/index.html" class="logo">
+              <div class="logo-emblema">
+                <p class="logo-emblema text first">AMG</p>
+                <p class="logo-emblema text second">Security</p>
+              </div>
+              <div class="logo-line"></div>
+              <p class="logo-text">
+                Your Trust, <br />
+                Our Protection
+              </p>
+            </a>
+            <button
+              type="button"
+              class="cross-button menu-toggle js-close-menu"
+            >
+              <svg width="30" height="30">
+                <use href="./images/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mobile-menu-navigation">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./about-us.html">About us</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link service" href="./cctv-monitoring.html">
+                Services
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-arrow-down-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./guards-skills.html">The skills of guards</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Reviews</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./career.html">Career</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Blog</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contact us</a>
+            </li>
+          </ul>
+
+          <div class="langs">
+            <p class="lang-label active">Eng</p>
+            <div class="lang-line"></div>
+            <p class="lang-label">Ru</p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
@@ -408,5 +479,6 @@
       </div>
     </footer>
     <script src="./js/question-toogle.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
