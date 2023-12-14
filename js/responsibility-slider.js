@@ -7,7 +7,7 @@ let responsibilityCurrentIndex = 0;
 let responsibilityTouchStartX = 0;
 let responsibilityTouchEndX = 0;
 
-let responsibilityClicksCount = 3;
+let responsibilityClicksCount = 11;
 let responsibilityGap = 10;
 
 const responsibilitySlideWidth = responsibilitySlides[0].offsetWidth;

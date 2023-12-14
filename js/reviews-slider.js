@@ -32,10 +32,10 @@ function prevReview() {
 }
 
 const nextButton = document.querySelector(
-  ".reviews-slider .button-ctrl:last-of-type"
+  ".desktop.reviews-button-ctrl .button-ctrl:last-of-type"
 );
 const prevButton = document.querySelector(
-  ".reviews-slider .button-ctrl:first-of-type"
+  ".desktop.reviews-button-ctrl .button-ctrl:first-of-type"
 );
 const mobileNextButton = document.querySelector(
   ".mobile.reviews-button-ctrl .button-ctrl:last-of-type"
