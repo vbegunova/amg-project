@@ -117,6 +117,7 @@ button {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,6 +264,55 @@ button {
   width: 1px;
   height: 17px;
   background-color: rgba(247, 247, 247, 0.5);
+}
+
+.services-arrow-down {
+  margin-left: 7px;
+}
+
+.header-services-list {
+  padding: 26px 34px 29px 32px;
+  position: absolute;
+  top: 60px;
+  left: 440px;
+  width: 227px;
+  height: 436px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0px 14px 134px 0px rgba(0, 0, 0, 0.95);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.header-services-list.is-open {
+  opacity: 1;
+}
+
+.header-services-list .item .link {
+  color: #232323;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.header-services-list .item .link.events {
+  line-height: 1.2;
+}
+
+.header-services-list .line {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.header-services-list .item.active .link {
+  color: #0f252e;
+  font-style: normal;
+  font-weight: 600;
 }
 
 /* Hero page */
@@ -684,11 +734,9 @@ button {
 
 .advantages .title {
   margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
   width: 192px;
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 
@@ -743,7 +791,7 @@ button {
 
 .advantages-slider-box {
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .advantages-slider-box,
@@ -857,6 +905,10 @@ button {
   gap: 6px;
   justify-content: center;
   text-align: center;
+}
+
+.slider-dots.left {
+  justify-content: left;
 }
 
 @media screen and (min-width: 1440px) {
@@ -1461,25 +1513,25 @@ button {
 }
 
 .principles .title {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 11px;
   width: 209px;
   font-size: 28px;
   color: #fff;
-  text-align: center;
 }
 
 @media screen and (min-width: 1440px) {
   .principles .title {
     margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
     width: 609px;
     font-size: 81px;
+    text-align: center;
   }
 }
 
 .principles-slider-box {
-  margin-bottom: 14px;
+  margin-bottom: 19px;
   width: 303px;
   overflow: hidden;
 }
@@ -1592,13 +1644,14 @@ button {
   margin-bottom: 18px;
   font-size: 28px;
   color: #141414;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (min-width: 1440px) {
   .services .title {
     margin-bottom: 45px;
     font-size: 81px;
+    text-align: center;
   }
 }
 
@@ -1857,7 +1910,7 @@ button {
 .responsibility .title {
   margin-bottom: 16px;
   font-size: 28px;
-  text-align: center;
+  text-align: left;
   color: #141414;
 }
 
@@ -1865,6 +1918,7 @@ button {
   .responsibility .title {
     margin-bottom: 46px;
     font-size: 81px;
+    text-align: center;
   }
 }
 
@@ -2028,7 +2082,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }  
+  }
 }
 
 .button-ctrl {
@@ -2055,11 +2109,11 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 1440px) { 
+@media screen and (min-width: 1440px) {
   .desktop.reviews-button-ctrl {
     display: flex;
     gap: 10px;
-  }  
+  }
 }
 
 .mobile .button-ctrl {
@@ -2135,14 +2189,16 @@ button {
 }
 
 .questions .title {
+  width: 312px;
   margin-bottom: 20px;
   font-size: 28px;
   color: #fff;
-  text-align: center;
 }
 
 @media screen and (min-width: 1440px) {
   .questions .title {
+    width: 100%;
+    text-align: center;
     margin-bottom: 54px;
     font-size: 81px;
   }
@@ -2694,7 +2750,7 @@ button {
 @media screen and (min-width: 1440px) {
   .about_us-about .info-boxes .text {
     font-size: 18px;
-  }  
+  }
 }
 
 .about_us-about .info-boxes .bottom {
@@ -2710,7 +2766,7 @@ button {
     display: flex;
     flex-direction: row-reverse;
     gap: 42px;
-  } 
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -2723,7 +2779,7 @@ button {
   .about_us-about .info-boxes .bottom .text:first-child {
     padding-top: 16px;
   }
-  
+
   .about_us-about .info-boxes .bottom .text:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -2781,7 +2837,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 36px;
-  }  
+  }
 }
 
 .about_us-why-prestigious .item {
@@ -2839,7 +2895,7 @@ button {
   .about_us-why-prestigious .item .description {
     font-size: 18px;
     font-weight: 300;
-  }  
+  }
 }
 
 /* About Us Abour our guards */
@@ -2919,12 +2975,12 @@ button {
     width: 610px;
     margin-bottom: 26px;
   }
-  
+
   .about_us-about-guards .description .text:nth-child(3) {
     width: 653px;
     margin-bottom: 50px;
   }
-  
+
   .about_us-about-guards .description .text:nth-child(4) {
     width: 634px;
   }
@@ -3019,7 +3075,7 @@ button {
     display: flex;
     align-items: center;
     gap: 53px;
-  }  
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -3112,12 +3168,12 @@ button {
 }
 
 .service_page-about-service .dot {
-  border: 1px solid #0F252E;
+  border: 1px solid #0f252e;
   background-color: transparent;
 }
 
 .service_page-about-service .dot.active {
-  background-color: #0F252E;
+  background-color: #0f252e;
 }
 
 /* Service page Questions */
@@ -3166,11 +3222,14 @@ button {
   }
 }
 
+.cctv_monitoring.service_page-hero .title {
+  text-transform: uppercase;
+}
+
 .service_page-hero .title {
   margin-bottom: 9px;
   color: #fff;
   font-size: 41px;
-  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3267,7 +3326,7 @@ button {
 
 .service_page-about-service .text {
   margin-bottom: 20px;
-  color: rgba(20, 20, 20, 0.60);
+  color: rgba(20, 20, 20, 0.6);
   font-size: 12px;
   line-height: normal;
   text-align: center;
@@ -3367,15 +3426,15 @@ button {
   .cctv_monitoring.service_page-about-service .item:nth-child(1) {
     padding-right: 109px;
   }
-  
+
   .cctv_monitoring.service_page-about-service .item:nth-child(2) {
     padding-right: 140px;
   }
-  
+
   .cctv_monitoring.service_page-about-service .item:nth-child(3) {
     padding-right: 122px;
   }
-  
+
   .cctv_monitoring.service_page-about-service .item:nth-child(4) {
     padding-right: 109px;
   }
@@ -3394,19 +3453,20 @@ button {
   .service_page-about-service .item .title {
     margin-bottom: 18px;
     font-size: 38px;
-  }  
+  }
 }
 
 .service_page-about-service .item .description {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 1440px) {
   .service_page-about-service .item .description {
     font-size: 21px;
+    line-height: normal;
   }
 }
 
@@ -3477,23 +3537,23 @@ button {
   .cctv_monitoring.service_page-stages .item:nth-child(1) {
     padding-right: 83px;
   }
-  
+
   .cctv_monitoring.service_page-stages .item:nth-child(2) {
     padding-right: 63px;
   }
-  
+
   .cctv_monitoring.service_page-stages .item:nth-child(3) {
     padding-right: 114px;
   }
-  
+
   .cctv_monitoring.service_page-stages .item:nth-child(4) {
     padding-right: 134px;
   }
-  
+
   .cctv_monitoring.service_page-stages .item:nth-child(5) {
     padding-right: 60px;
   }
-  
+
   .cctv_monitoring.service_page-stages .item:nth-child(6) {
     padding-right: 76px;
   }
@@ -3553,8 +3613,11 @@ button {
 }
 
 /* Real Estate Security About service */
+.estate_security.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .estate_security.service_page-about-service .item:nth-child(1) {
-  padding-right: 109px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3564,7 +3627,6 @@ button {
 }
 
 .estate_security.service_page-about-service .item:nth-child(2) {
-  padding-right: 86px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3574,7 +3636,6 @@ button {
 }
 
 .estate_security.service_page-about-service .item:nth-child(3) {
-  padding-right: 122px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3583,13 +3644,7 @@ button {
     url("../images/estate-security/about-service/background-third.jpg");
 }
 
-.estate_security.service_page-about-service .item:nth-child(3) .title,
-.estate_security.service_page-about-service .item:nth-child(4) .title {
-  width: 516px;
-}
-
 .estate_security.service_page-about-service .item:nth-child(4) {
-  padding-right: 96px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3598,35 +3653,71 @@ button {
     url("../images/estate-security/about-service/background-fourth.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .estate_security.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .estate_security.service_page-about-service .item:nth-child(1) {
+    padding-right: 109px;
+  }
+
+  .estate_security.service_page-about-service .item:nth-child(2) {
+    padding-right: 86px;
+  }
+
+  .estate_security.service_page-about-service .item:nth-child(3) {
+    padding-right: 122px;
+  }
+
+  .estate_security.service_page-about-service .item:nth-child(3) .title,
+  .estate_security.service_page-about-service .item:nth-child(4) .title {
+    width: 516px;
+  }
+
+  .estate_security.service_page-about-service .item:nth-child(4) {
+    padding-right: 96px;
+  }
+}
+
 /* Real Estate Security Stages */
-.estate_security.service_page-stages .item:nth-child(1) {
-  padding-right: 168px;
-}
+@media screen and (min-width: 1440px) {
+  .estate_security.service_page-stages .item:nth-child(1) {
+    padding-right: 168px;
+  }
 
-.estate_security.service_page-stages .item:nth-child(2) {
-  padding-right: 121px;
-}
+  .estate_security.service_page-stages .item:nth-child(2) {
+    padding-right: 121px;
+  }
 
-.estate_security.service_page-stages .item:nth-child(3) {
-  padding-right: 114px;
-}
+  .estate_security.service_page-stages .item:nth-child(3) {
+    padding-right: 114px;
+  }
 
-.estate_security.service_page-stages .item:nth-child(4) {
-  padding-right: 202px;
-}
+  .estate_security.service_page-stages .item:nth-child(4) {
+    padding-right: 202px;
+  }
 
-.estate_security.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .estate_security.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.estate_security.service_page-stages .item:nth-child(6) {
-  padding-right: 175px;
+  .estate_security.service_page-stages .item:nth-child(6) {
+    padding-right: 175px;
+  }
 }
 
 /* Real EState Security Quote */
 .estate_security.service_page.quote .title {
-  width: 453px;
-  margin-bottom: 21px;
+  width: 155px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .estate_security.service_page.quote .title {
+    width: 453px;
+    margin-bottom: 21px;
+  }
 }
 
 /* Family Security Security Hero */
@@ -3640,8 +3731,11 @@ button {
 }
 
 /* Family Security Security About service */
+.family_security.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .family_security.service_page-about-service .item:nth-child(1) {
-  padding-right: 77px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3651,7 +3745,6 @@ button {
 }
 
 .family_security.service_page-about-service .item:nth-child(2) {
-  padding-right: 41px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3661,7 +3754,6 @@ button {
 }
 
 .family_security.service_page-about-service .item:nth-child(3) {
-  padding-right: 122px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3670,12 +3762,7 @@ button {
     url("../images/family-security/about-service/background-third.jpg");
 }
 
-.family_security.service_page-about-service .item:nth-child(3) .title {
-  width: 516px;
-}
-
 .family_security.service_page-about-service .item:nth-child(4) {
-  padding-right: 79px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3684,39 +3771,73 @@ button {
     url("../images/family-security/about-service/background-fourth.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .family_security.service_page-about-service .item .description {
+    font-size: 11px;
+  }
+
+  .family_security.service_page-about-service .item:nth-child(1) {
+    padding-right: 77px;
+  }
+
+  .family_security.service_page-about-service .item:nth-child(2) {
+    padding-right: 41px;
+  }
+
+  .family_security.service_page-about-service .item:nth-child(3) {
+    padding-right: 122px;
+  }
+
+  .family_security.service_page-about-service .item:nth-child(3) .title {
+    width: 516px;
+  }
+
+  .family_security.service_page-about-service .item:nth-child(4) {
+    padding-right: 79px;
+  }
+}
+
 /* Family Security Stages */
-.family_security.service_page-stages .item:nth-child(1) {
-  padding-right: 168px;
-}
+@media screen and (min-width: 1440px) {
+  .family_security.service_page-stages .item:nth-child(1) {
+    padding-right: 168px;
+  }
 
-.family_security.service_page-stages .item:nth-child(2) {
-  padding-right: 85px;
-}
+  .family_security.service_page-stages .item:nth-child(2) {
+    padding-right: 85px;
+  }
 
-.family_security.service_page-stages .item:nth-child(3) {
-  padding-right: 147px;
-}
+  .family_security.service_page-stages .item:nth-child(3) {
+    padding-right: 147px;
+  }
 
-.family_security.service_page-stages .item:nth-child(4) {
-  padding-right: 53px;
-}
+  .family_security.service_page-stages .item:nth-child(4) {
+    padding-right: 53px;
+  }
 
-.family_security.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .family_security.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.family_security.service_page-stages .item:nth-child(5) .title {
-  width: 362px;
-}
+  .family_security.service_page-stages .item:nth-child(5) .title {
+    width: 362px;
+  }
 
-.family_security.service_page-stages .item:nth-child(6) {
-  padding-right: 75px;
+  .family_security.service_page-stages .item:nth-child(6) {
+    padding-right: 75px;
+  }
 }
 
 /* Family Security Quote */
 .family_security.service_page.quote .title {
   margin-bottom: 16px;
-  width: 410px;
+  width: 230px;
+}
+
+@media screen and (min-width: 1440px) {
+  .family_security.service_page.quote .title {
+    width: 410px;
+  }
 }
 
 .family_security.service_page.quote .quote-text {
@@ -3735,7 +3856,18 @@ button {
 
 /* Escort Service Security About service */
 .escort_service.service_page-about-service .item:nth-child(1) {
-  padding-right: 51px;
+  padding-top: 13px;
+}
+
+.escort_service.service_page-about-service .item:nth-child(1) .title {
+  margin-bottom: 5px;
+}
+
+.escort_service.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
+.escort_service.service_page-about-service .item:nth-child(1) {
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3745,7 +3877,6 @@ button {
 }
 
 .escort_service.service_page-about-service .item:nth-child(2) {
-  padding-right: 68px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3755,7 +3886,6 @@ button {
 }
 
 .escort_service.service_page-about-service .item:nth-child(3) {
-  padding-right: 57px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3764,13 +3894,7 @@ button {
     url("../images/escort-service/about-service/background-third.jpg");
 }
 
-.escort_service.service_page-about-service .item:nth-child(3) .title {
-  margin-bottom: 6px;
-  width: 350px;
-}
-
 .escort_service.service_page-about-service .item:nth-child(4) {
-  padding-right: 99px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3779,40 +3903,84 @@ button {
     url("../images/escort-service/about-service/background-fourth.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .escort_service.service_page-about-service .item:nth-child(1) {
+    padding-top: 44px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(1) .title {
+    margin-bottom: 18px;
+  }
+
+  .escort_service.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(1) {
+    padding-right: 51px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(2) {
+    padding-right: 68px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(3) {
+    padding-right: 57px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(3) .title {
+    margin-bottom: 6px;
+    width: 350px;
+  }
+
+  .escort_service.service_page-about-service .item:nth-child(4) {
+    padding-right: 99px;
+  }
+}
+
 /* Escort Service Stages */
-.escort_service.service_page-stages .item:nth-child(1) {
-  padding-right: 168px;
-}
+@media screen and (min-width: 1440px) {
+  .escort_service.service_page-stages .item:nth-child(1) {
+    padding-right: 168px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(2) {
-  padding-right: 85px;
-}
+  .escort_service.service_page-stages .item:nth-child(2) {
+    padding-right: 85px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(3) {
-  padding-right: 71px;
-}
+  .escort_service.service_page-stages .item:nth-child(3) {
+    padding-right: 71px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(4) {
-  padding-right: 119px;
-}
+  .escort_service.service_page-stages .item:nth-child(4) {
+    padding-right: 119px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .escort_service.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(5) .title {
-  width: 362px;
-}
+  .escort_service.service_page-stages .item:nth-child(5) .title {
+    width: 362px;
+  }
 
-.escort_service.service_page-stages .item:nth-child(6) {
-  padding-right: 38px;
+  .escort_service.service_page-stages .item:nth-child(6) {
+    padding-right: 38px;
+  }
 }
 
 /* Escort service Quote */
 .escort_service.service_page.quote .title {
-  margin-bottom: 23px;
-  font-size: 71px;
-  width: 550px;
+  margin-bottom: 16px;
+  width: 273px;
+}
+
+@media screen and (min-width: 1440px) {
+  .escort_service.service_page.quote .title {
+    margin-bottom: 23px;
+    font-size: 71px;
+    width: 550px;
+  }
 }
 
 .escort_service.service_page.quote .quote-text {
@@ -3830,8 +3998,11 @@ button {
 }
 
 /* Personal Protection Security About service */
+.personal_protection.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .personal_protection.service_page-about-service .item:nth-child(1) {
-  padding-right: 71px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3841,7 +4012,6 @@ button {
 }
 
 .personal_protection.service_page-about-service .item:nth-child(2) {
-  padding-right: 86px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3850,12 +4020,7 @@ button {
     url("../images/personal-protection/about-service/background-second.jpg");
 }
 
-.personal_protection.service_page-about-service .item:nth-child(2) .title {
-  width: 325px;
-}
-
 .personal_protection.service_page-about-service .item:nth-child(3) {
-  padding-right: 122px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3864,12 +4029,7 @@ button {
     url("../images/personal-protection/about-service/background-third.jpg");
 }
 
-.personal_protection.service_page-about-service .item:nth-child(3) .title {
-  width: 516px;
-}
-
 .personal_protection.service_page-about-service .item:nth-child(4) {
-  padding-right: 96px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3878,39 +4038,78 @@ button {
     url("../images/personal-protection/about-service/background-fourth.jpg");
 }
 
-.personal_protection.service_page-about-service .item:nth-child(4) .title {
-  width: 474px;
+@media screen and (min-width: 1440px) {
+  .personal_protection.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(1) {
+    padding-right: 71px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(2) {
+    padding-right: 86px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(2) .title {
+    width: 325px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(3) {
+    padding-right: 122px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(3) .title {
+    width: 516px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(4) {
+    padding-right: 96px;
+  }
+
+  .personal_protection.service_page-about-service .item:nth-child(4) .title {
+    width: 474px;
+  }
 }
 
 /* Personal Protection Stages */
-.personal_protection.service_page-stages .item:nth-child(1) {
-  padding-right: 168px;
-}
+@media screen and (min-width: 1440px) {
+  .personal_protection.service_page-stages .item:nth-child(1) {
+    padding-right: 168px;
+  }
 
-.personal_protection.service_page-stages .item:nth-child(2) {
-  padding-right: 58px;
-}
+  .personal_protection.service_page-stages .item:nth-child(2) {
+    padding-right: 58px;
+  }
 
-.personal_protection.service_page-stages .item:nth-child(3) {
-  padding-right: 45px;
-}
+  .personal_protection.service_page-stages .item:nth-child(3) {
+    padding-right: 45px;
+  }
 
-.personal_protection.service_page-stages .item:nth-child(4) {
-  padding-right: 53px;
-}
+  .personal_protection.service_page-stages .item:nth-child(4) {
+    padding-right: 53px;
+  }
 
-.personal_protection.service_page-stages .item:nth-child(5) {
-  padding-right: 55px;
-}
+  .personal_protection.service_page-stages .item:nth-child(5) {
+    padding-right: 55px;
+  }
 
-.personal_protection.service_page-stages .item:nth-child(6) {
-  padding-right: 42px;
+  .personal_protection.service_page-stages .item:nth-child(6) {
+    padding-right: 42px;
+  }
 }
 
 /* Personal Protection Quote */
 .personal_protection.service_page.quote .title {
-  margin-bottom: 6px;
-  width: 409px;
+  margin-bottom: 16px;
+  width: 236px;
+}
+
+@media screen and (min-width: 1440px) {
+  .personal_protection.service_page.quote .title {
+    margin-bottom: 6px;
+    width: 409px;
+  }
 }
 
 /* Security consultancy Security Hero */
@@ -3924,8 +4123,19 @@ button {
 }
 
 /* Security consultancy About service */
+.security_consultancy.service_page-about-service .item {
+  padding-top: 15px;
+}
+
+.security_consultancy.service_page-about-service .item .title {
+  margin-bottom: 5px;
+}
+
+.security_consultancy.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .security_consultancy.service_page-about-service .item:nth-child(1) {
-  padding-right: 46px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3935,7 +4145,6 @@ button {
 }
 
 .security_consultancy.service_page-about-service .item:nth-child(2) {
-  padding-right: 40px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -3945,68 +4154,104 @@ button {
 }
 
 .security_consultancy.service_page-about-service .item:nth-child(3) {
-  padding-right: 46px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
       rgba(20, 20, 20, 0.65) 100%
     ),
     url("../images/security-consultancy/about-service/background-third.jpg");
-}
-
-.security_consultancy.service_page-about-service .item:nth-child(3) .title,
-.security_consultancy.service_page-about-service .item:nth-child(4) .title {
-  width: 403px;
 }
 
 .security_consultancy.service_page-about-service .item:nth-child(4) {
-  padding-right: 46px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
       rgba(20, 20, 20, 0.65) 100%
     ),
     url("../images/security-consultancy/about-service/background-third.jpg");
+}
+
+@media screen and (min-width: 1440px) {
+  .security_consultancy.service_page-about-service .item {
+    padding-top: 44px;
+  }
+
+  .security_consultancy.service_page-about-service .item .title {
+    margin-bottom: 18px;
+  }
+
+  .security_consultancy.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .security_consultancy.service_page-about-service .item:nth-child(1) {
+    padding-right: 46px;
+  }
+
+  .security_consultancy.service_page-about-service .item:nth-child(2) {
+    padding-right: 40px;
+  }
+
+  .security_consultancy.service_page-about-service .item:nth-child(3) {
+    padding-right: 46px;
+  }
+
+  .security_consultancy.service_page-about-service .item:nth-child(3) .title,
+  .security_consultancy.service_page-about-service .item:nth-child(4) .title {
+    width: 403px;
+  }
+
+  .security_consultancy.service_page-about-service .item:nth-child(4) {
+    padding-right: 46px;
+  }
 }
 
 /* Security consiltancy Quote */
 .security_consultancy.service_page.quote .title {
-  margin-bottom: 10px;
-  width: 473px;
+  margin-bottom: 16px;
+  width: 239px;
+}
+
+@media screen and (min-width: 1440px) {
+  .security_consultancy.service_page.quote .title {
+    margin-bottom: 10px;
+    width: 473px;
+  }
 }
 
 .security_consultancy.service_page.quote .quote-text {
   width: 432px;
 }
 
-
 /* Security consultancy Stages */
-.security_consultancy.service_page-stages .item:nth-child(1) {
-  padding-right: 39px;
-}
+@media screen and (min-width: 1440px) {
+  .security_consultancy.service_page-stages .item:nth-child(1) {
+    padding-right: 39px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(2) {
-  padding-right: 87px;
-}
+  .security_consultancy.service_page-stages .item:nth-child(2) {
+    padding-right: 87px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(3) {
-  padding-right: 121px;
-}
+  .security_consultancy.service_page-stages .item:nth-child(3) {
+    padding-right: 121px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(4) {
-  padding-right: 98px;
-}
+  .security_consultancy.service_page-stages .item:nth-child(4) {
+    padding-right: 98px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .security_consultancy.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(5) .title {
-  width: 359px;
-}
+  .security_consultancy.service_page-stages .item:nth-child(5) .title {
+    width: 359px;
+  }
 
-.security_consultancy.service_page-stages .item:nth-child(6) {
-  padding-right: 95px;
+  .security_consultancy.service_page-stages .item:nth-child(6) {
+    padding-right: 95px;
+  }
 }
 
 /* Residential security Hero */
@@ -4020,8 +4265,11 @@ button {
 }
 
 /* Residential security About service */
+.residential_security.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .residential_security.service_page-about-service .item:nth-child(1) {
-  padding-right: 46px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4031,7 +4279,6 @@ button {
 }
 
 .residential_security.service_page-about-service .item:nth-child(2) {
-  padding-right: 73px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4040,23 +4287,8 @@ button {
     url("../images/residential-security/about-service/background-second.jpg");
 }
 
-.residential_security.service_page-about-service .item:nth-child(3) {
-  padding-right: 87px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(20, 20, 20, 0.65) 0%,
-      rgba(20, 20, 20, 0.65) 100%
-    ),
-    url("../images/residential-security/about-service/background-third.jpg");
-}
-
-.residential_security.service_page-about-service .item:nth-child(3) .title,
-.residential_security.service_page-about-service .item:nth-child(4) .title {
-  width: 403px;
-}
-
+.residential_security.service_page-about-service .item:nth-child(3),
 .residential_security.service_page-about-service .item:nth-child(4) {
-  padding-right: 87px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4065,40 +4297,76 @@ button {
     url("../images/residential-security/about-service/background-third.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .residential_security.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .residential_security.service_page-about-service .item:nth-child(1) {
+    padding-right: 46px;
+  }
+
+  .residential_security.service_page-about-service .item:nth-child(1) .title {
+    margin-bottom: 18px;
+  }
+
+  .residential_security.service_page-about-service .item:nth-child(2) {
+    padding-right: 73px;
+  }
+
+  .residential_security.service_page-about-service .item:nth-child(3),
+  .residential_security.service_page-about-service .item:nth-child(4) {
+    padding-right: 87px;
+  }
+
+  .residential_security.service_page-about-service .item:nth-child(3) .title,
+  .residential_security.service_page-about-service .item:nth-child(4) .title {
+    width: 403px;
+  }
+}
 
 /* Residential security Stages */
-.residential_security.service_page-stages .item:nth-child(1) {
-  padding-right: 131px;
-}
+@media screen and (min-width: 1440px) {
+  .residential_security.service_page-stages .item:nth-child(1) {
+    padding-right: 131px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(2) {
-  padding-right: 50px;
-}
+  .residential_security.service_page-stages .item:nth-child(2) {
+    padding-right: 50px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(3) {
-  padding-right: 31px;
-}
+  .residential_security.service_page-stages .item:nth-child(3) {
+    padding-right: 31px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(4) {
-  padding-right: 98px;
-}
+  .residential_security.service_page-stages .item:nth-child(4) {
+    padding-right: 98px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .residential_security.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(6) {
-  padding-right: 95px;
-}
+  .residential_security.service_page-stages .item:nth-child(6) {
+    padding-right: 95px;
+  }
 
-.residential_security.service_page-stages .item:nth-child(6) .title {
-  width: 371px;
+  .residential_security.service_page-stages .item:nth-child(6) .title {
+    width: 371px;
+  }
 }
 
 /* Residential security Quote */
 .residential_security.service_page.quote .title {
-  margin-bottom: 10px;
-  width: 457px;
+  margin-bottom: 16px;
+  width: 235px;
+}
+
+@media screen and (min-width: 1440px) {
+  .residential_security.service_page.quote .title {
+    margin-bottom: 10px;
+    width: 457px;
+  }
 }
 
 .residential_security.service_page.quote .quote-text {
@@ -4116,8 +4384,15 @@ button {
 }
 
 /* CCTV Installation About service */
+.cctv_installation.service_page-about-service .item {
+  padding-top: 23px;
+}
+
+.cctv_installation.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .cctv_installation.service_page-about-service .item:nth-child(1) {
-  padding-right: 46px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.75) 0%,
@@ -4127,7 +4402,6 @@ button {
 }
 
 .cctv_installation.service_page-about-service .item:nth-child(2) {
-  padding-right: 87px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.75) 0%,
@@ -4137,22 +4411,15 @@ button {
 }
 
 .cctv_installation.service_page-about-service .item:nth-child(3) {
-  padding-right: 90px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.75) 0%,
       rgba(20, 20, 20, 0.75) 100%
     ),
     url("../images/cctv-installation/about-service/background-third.jpg");
-}
-
-.cctv_installation.service_page-about-service .item:nth-child(3) .title,
-.cctv_installation.service_page-about-service .item:nth-child(4) .title {
-  width: 407px;
 }
 
 .cctv_installation.service_page-about-service .item:nth-child(4) {
-  padding-right: 90px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.75) 0%,
@@ -4161,39 +4428,79 @@ button {
     url("../images/cctv-installation/about-service/background-third.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .cctv_installation.service_page-about-service .item {
+    padding-top: 44px;
+  }
+
+  .cctv_installation.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .cctv_installation.service_page-about-service .item:nth-child(1) {
+    padding-right: 46px;
+  }
+
+  .cctv_installation.service_page-about-service .item:nth-child(2) {
+    padding-right: 87px;
+  }
+
+  .cctv_installation.service_page-about-service .item:nth-child(3) {
+    padding-right: 90px;
+  }
+
+  .cctv_installation.service_page-about-service .item:nth-child(3) .title,
+  .cctv_installation.service_page-about-service .item:nth-child(4) .title {
+    width: 407px;
+  }
+
+  .cctv_installation.service_page-about-service .item:nth-child(4) {
+    padding-right: 90px;
+  }
+}
+
 /* CCTV Installation Stages */
-.cctv_installation.service_page-stages .item:nth-child(1) {
-  padding-right: 62px;
-}
+@media screen and (min-width: 1440px) {
+  .cctv_installation.service_page-stages .item:nth-child(1) {
+    padding-right: 62px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(2) {
-  padding-right: 129px;
-}
+  .cctv_installation.service_page-stages .item:nth-child(2) {
+    padding-right: 129px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(3) {
-  padding-right: 151px;
-}
+  .cctv_installation.service_page-stages .item:nth-child(3) {
+    padding-right: 151px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(4) {
-  padding-right: 43px;
-}
+  .cctv_installation.service_page-stages .item:nth-child(4) {
+    padding-right: 43px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(5) {
-  padding-right: 60px;
-}
+  .cctv_installation.service_page-stages .item:nth-child(5) {
+    padding-right: 60px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(6) {
-  padding-right: 30px;
-}
+  .cctv_installation.service_page-stages .item:nth-child(6) {
+    padding-right: 30px;
+  }
 
-.cctv_installation.service_page-stages .item:nth-child(6) .title {
-  width: 371px;
+  .cctv_installation.service_page-stages .item:nth-child(6) .title {
+    width: 371px;
+  }
 }
 
 /* CCTV Installation Quote */
 .cctv_installation.service_page.quote .title {
-  margin-bottom: 17px;
-  width: 471px;
+  margin-bottom: 16px;
+  width: 243px;
+}
+
+@media screen and (min-width: 1440px) {
+  .cctv_installation.service_page.quote .title {
+    margin-bottom: 17px;
+    width: 471px;
+  }
 }
 
 .cctv_installation.service_page.quote .quote-text {
@@ -4211,8 +4518,15 @@ button {
 }
 
 /* Events security About service */
+.events_security.service_page-about-service .item {
+  padding-top: 18px;
+}
+
+.events_security.service_page-about-service .item .description {
+  font-size: 11px;
+}
+
 .events_security.service_page-about-service .item:nth-child(1) {
-  padding-right: 109px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4222,7 +4536,6 @@ button {
 }
 
 .events_security.service_page-about-service .item:nth-child(2) {
-  padding-right: 86px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4232,22 +4545,15 @@ button {
 }
 
 .events_security.service_page-about-service .item:nth-child(3) {
-  padding-right: 29px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
       rgba(20, 20, 20, 0.65) 100%
     ),
     url("../images/events-security/about-service/background-third.jpg");
-}
-
-.events_security.service_page-about-service .item:nth-child(3) .title,
-.events_security.service_page-about-service .item:nth-child(4) .title {
-  width: 352px;
 }
 
 .events_security.service_page-about-service .item:nth-child(4) {
-  padding-right: 29px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4256,40 +4562,80 @@ button {
     url("../images/events-security/about-service/background-third.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .events_security.service_page-about-service .item {
+    padding-top: 44px;
+  }
+
+  .events_security.service_page-about-service .item .description {
+    font-size: 21px;
+  }
+
+  .events_security.service_page-about-service .item:nth-child(1) {
+    padding-right: 109px;
+  }
+
+  .events_security.service_page-about-service .item:nth-child(2) {
+    padding-right: 86px;
+  }
+
+  .events_security.service_page-about-service .item:nth-child(3) {
+    padding-right: 29px;
+  }
+
+  .events_security.service_page-about-service .item:nth-child(3) .title,
+  .events_security.service_page-about-service .item:nth-child(4) .title {
+    width: 352px;
+  }
+
+  .events_security.service_page-about-service .item:nth-child(4) {
+    padding-right: 29px;
+  }
+}
+
 /* Events security Stages */
-.events_security.service_page-stages .item:nth-child(1) {
-  padding-right: 69px;
-}
+@media screen and (min-width: 1440px) {
+  .events_security.service_page-stages .item:nth-child(1) {
+    padding-right: 69px;
+  }
 
-.events_security.service_page-stages .item:nth-child(2) {
-  padding-right: 123px;
-}
+  .events_security.service_page-stages .item:nth-child(2) {
+    padding-right: 123px;
+  }
 
-.events_security.service_page-stages .item:nth-child(3) {
-  padding-right: 112px;
-}
+  .events_security.service_page-stages .item:nth-child(3) {
+    padding-right: 112px;
+  }
 
-.events_security.service_page-stages .item:nth-child(4) {
-  padding-right: 98px;
-}
+  .events_security.service_page-stages .item:nth-child(4) {
+    padding-right: 98px;
+  }
 
-.events_security.service_page-stages .item:nth-child(3) .title,
-.events_security.service_page-stages .item:nth-child(4) .title {
-  width: 406px;
-}
+  .events_security.service_page-stages .item:nth-child(3) .title,
+  .events_security.service_page-stages .item:nth-child(4) .title {
+    width: 406px;
+  }
 
-.events_security.service_page-stages .item:nth-child(5) {
-  padding-right: 127px;
-}
+  .events_security.service_page-stages .item:nth-child(5) {
+    padding-right: 127px;
+  }
 
-.events_security.service_page-stages .item:nth-child(6) {
-  padding-right: 88px;
+  .events_security.service_page-stages .item:nth-child(6) {
+    padding-right: 88px;
+  }
 }
 
 /* Events security Quote */
 .events_security.service_page.quote .title {
-  margin-bottom: 17px;
-  width: 548px;
+  margin-bottom: 16px;
+  width: 232px;
+}
+
+@media screen and (min-width: 1440px) {
+  .events_security.service_page.quote .title {
+    margin-bottom: 17px;
+    width: 548px;
+  }
 }
 
 .events_security.service_page.quote .quote-text {
@@ -4307,8 +4653,11 @@ button {
 }
 
 /* Drone security About service */
+.drone_security.service_page-about-service .item {
+  font-size: 11px;
+}
+
 .drone_security.service_page-about-service .item:nth-child(1) {
-  padding-right: 109px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4317,12 +4666,7 @@ button {
     url("../images/drone-security/about-service/background-first.jpg");
 }
 
-.drone_security.service_page-about-service .item:nth-child(1) .title {
-  width: 458px;
-}
-
 .drone_security.service_page-about-service .item:nth-child(2) {
-  padding-right: 69px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4332,22 +4676,15 @@ button {
 }
 
 .drone_security.service_page-about-service .item:nth-child(3) {
-  padding-right: 29px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
       rgba(20, 20, 20, 0.65) 100%
     ),
     url("../images/drone-security/about-service/background-third.jpg");
-}
-
-.drone_security.service_page-about-service .item:nth-child(3) .title,
-.drone_security.service_page-about-service .item:nth-child(4) .title {
-  width: 367px;
 }
 
 .drone_security.service_page-about-service .item:nth-child(4) {
-  padding-right: 29px;
   background-image: linear-gradient(
       0deg,
       rgba(20, 20, 20, 0.65) 0%,
@@ -4356,36 +4693,76 @@ button {
     url("../images/drone-security/about-service/background-third.jpg");
 }
 
+@media screen and (min-width: 1440px) {
+  .drone_security.service_page-about-service .item {
+    font-size: 21px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(1) {
+    padding-right: 109px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(1) .title {
+    width: 458px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(2) {
+    padding-right: 69px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(3) {
+    padding-right: 29px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(3) .title,
+  .drone_security.service_page-about-service .item:nth-child(4) .title {
+    width: 367px;
+  }
+
+  .drone_security.service_page-about-service .item:nth-child(4) {
+    padding-right: 29px;
+  }
+}
+
 /* Drone security Stages */
-.drone_security.service_page-stages .item:nth-child(1) {
-  padding-right: 139px;
-}
+@media screen and (min-width: 1440px) {
+  .drone_security.service_page-stages .item:nth-child(1) {
+    padding-right: 139px;
+  }
 
-.drone_security.service_page-stages .item:nth-child(2) {
-  padding-right: 81px;
-}
+  .drone_security.service_page-stages .item:nth-child(2) {
+    padding-right: 81px;
+  }
 
-.drone_security.service_page-stages .item:nth-child(3) {
-  padding-right: 60px;
-}
+  .drone_security.service_page-stages .item:nth-child(3) {
+    padding-right: 60px;
+  }
 
-.drone_security.service_page-stages .item:nth-child(4) {
-  padding-right: 56px;
-}
+  .drone_security.service_page-stages .item:nth-child(4) {
+    padding-right: 56px;
+  }
 
-.drone_security.service_page-stages .item:nth-child(5) {
-  padding-right: 119px;
-}
+  .drone_security.service_page-stages .item:nth-child(5) {
+    padding-right: 119px;
+  }
 
-.drone_security.service_page-stages .item:nth-child(6) {
-  padding-right: 88px;
+  .drone_security.service_page-stages .item:nth-child(6) {
+    padding-right: 88px;
+  }
 }
 
 /* Drone security Quote */
 .drone_security.service_page.quote .title {
-  margin-bottom: 15px;
-  font-size: 71px;
-  width: 546px;
+  margin-bottom: 16px;
+  width: 211px;
+}
+
+@media screen and (min-width: 1440px) {
+  .drone_security.service_page.quote .title {
+    margin-bottom: 15px;
+    font-size: 71px;
+    width: 546px;
+  }
 }
 
 .drone_security.service_page.quote .quote-text {
@@ -4412,11 +4789,11 @@ button {
     padding-top: 190px;
     padding-bottom: 177px;
     background-image: linear-gradient(
-      0deg,
-      rgba(20, 20, 20, 0.6) 0%,
-      rgba(20, 20, 20, 0.6) 100%
-    ),
-    url("../images/guards-skills/hero-background.jpg");
+        0deg,
+        rgba(20, 20, 20, 0.6) 0%,
+        rgba(20, 20, 20, 0.6) 100%
+      ),
+      url("../images/guards-skills/hero-background.jpg");
     background-position: top;
   }
 }
@@ -4506,6 +4883,7 @@ button {
   font-size: 28px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4563,7 +4941,7 @@ button {
 }
 
 .guards_skills-selection-process .info-boxes .text {
-  color: #0F252E;
+  color: #0f252e;
   font-size: 11px;
   font-weight: 400;
   line-height: normal;
@@ -4686,7 +5064,7 @@ button {
   .guards_skills-technologies .text {
     color: #fff;
     font-size: 18px;
-  }  
+  }
 }
 
 .guards_skills-technologies .text:not(:last-child) {
@@ -4892,7 +5270,7 @@ button {
   .career-opportunities {
     padding-top: 80px;
     padding-bottom: 80px;
-  }  
+  }
 }
 
 .career-opportunities .title {
@@ -4905,12 +5283,12 @@ button {
   .career-opportunities .title {
     margin-bottom: 20px;
     font-size: 81px;
-  }  
+  }
 }
 
 .career-opportunities .text {
   margin-bottom: 16px;
-  color: rgba(20, 20, 20, 0.60);
+  color: rgba(20, 20, 20, 0.6);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -4964,7 +5342,7 @@ button {
   margin-bottom: 11px;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (min-width: 1440px) {
@@ -4986,7 +5364,7 @@ button {
     margin-bottom: 18px;
     font-size: 38px;
     line-height: 0.95;
-  }  
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -4997,7 +5375,7 @@ button {
 
 .career-opportunities .item .text {
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.70);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -5025,12 +5403,12 @@ button {
 }
 
 .career-opportunities .dot {
-  border: 1px solid #0F252E;
+  border: 1px solid #0f252e;
   background: transparent;
 }
 
 .career-opportunities .dot.active {
-  background: #0F252E;
+  background: #0f252e;
 }
 
 /* Career Cooperation */
@@ -5082,7 +5460,7 @@ button {
     margin-bottom: 24px;
     width: 457px;
     font-size: 81px;
-  }  
+  }
 }
 
 .career-cooperation .text {
@@ -5144,7 +5522,7 @@ button {
 
 .career-current-opening .text {
   margin-bottom: 21px;
-  color: rgba(20, 20, 20, 0.60);
+  color: rgba(20, 20, 20, 0.6);
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -5240,12 +5618,12 @@ button {
 }
 
 .career-current-opening .dot {
-  border: 1px solid #0F252E;
+  border: 1px solid #0f252e;
   background: transparent;
 }
 
 .career-current-opening .dot.active {
-  background: #0F252E;
+  background: #0f252e;
 }
 
 /* Career Quote */
@@ -5304,11 +5682,11 @@ button {
 }
 
 .mobile-menu-link {
-  color: #FFF;
-font-size: 21px;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .menu-container .langs {
@@ -5317,8 +5695,260 @@ text-transform: uppercase;
   gap: 10px;
 }
 
+.mobile-menu-item.service {
+  max-height: 26px;
+}
+
+.mobile-menu-item.service.is-open {
+  max-height: 500px;
+  transition: max-height 300ms ease;
+}
+
 .mobile-menu-link.service {
   display: flex;
   align-items: center;
   gap: 7px;
+}
+
+.mobile-services-list {
+  margin-top: 15px;
+  margin-bottom: 4px;
+  width: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.mobile-services-list.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: inherit;
+}
+
+.mobile-services-list .item .link {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.mobile-services-list .item .link.events {
+  line-height: 1.2;
+}
+
+.mobile-services-list .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.mobile-services-list .item.active .link {
+  font-weight: 600;
+}
+
+/* Case Hero */
+.case-hero {
+  padding-top: 163px;
+  padding-bottom: 138px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.6) 0%,
+    rgba(20, 20, 20, 0.6) 100%
+  ),
+  url("../images/case/hero-background-mobile.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-hero {
+    padding-top: 242px;
+    padding-bottom: 212px;
+    background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.6) 0%,
+    rgba(20, 20, 20, 0.6) 100%
+  ),
+  url("../images/case/hero-background.jpg");
+  }
+}
+
+.case-hero .title {
+  margin-bottom: 11px;
+  color: #fff;
+  font-size: 41px;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-hero .title {
+    margin-bottom: 28px;
+    width: 674px;
+    font-size: 81px;
+  }
+}
+
+.case-hero .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 214px;
+  height: 61px;
+  background-color: #fff;
+  border: none;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-hero .button {
+    width: 332px;
+    height: 94px;
+    font-size: 24px;
+  }
+}
+
+/* Case Details */
+.case-details {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-details {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.case-details .list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-details .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.case-details .item {
+  width: 304px;
+  padding: 20px 22px 30px 22px;
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+.case-details .item:nth-child(1) {
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.65) 0%,
+    rgba(20, 20, 20, 0.65) 100%
+  ),
+  url("../images/case/details/background-first.jpg");
+}
+
+.case-details .item:nth-child(2) {
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.65) 0%,
+    rgba(20, 20, 20, 0.65) 100%
+  ),
+  url("../images/case/details/background-second.jpg");
+}
+
+.case-details .item:nth-child(3) {
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.65) 0%,
+    rgba(20, 20, 20, 0.65) 100%
+  ),
+  url("../images/case/details/background-third.jpg");
+}
+
+.case-details .item:nth-child(4) {
+  background-image: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 0.65) 0%,
+    rgba(20, 20, 20, 0.65) 100%
+  ),
+  url("../images/case/details/background-fourth.jpg");
+}
+
+
+@media screen and (min-width: 1440px) {
+  .case-details .item {
+    width: 607px;
+    padding: 33px 74px 58px 49px;
+    background-color: grey;
+  }
+}
+
+.case-details .item .title {
+  margin-bottom: 3px;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-details .item .title {
+    margin-bottom: 4px;
+    color: #fff;
+    font-size: 38px;
+  }
+}
+
+.case-details .item .description {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 1440px) {
+  .case-details .item .description {
+  font-size: 21px;
+  }
+}
+
+/* Security consiltancy Quote */
+.case.quote .title {
+  margin-bottom: 16px;
+  width: 224px;
+  text-transform: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .case.quote .title {
+    margin-bottom: 20px;
+    width: 600px;
+    font-size: 63px;
+  }
+}
+
+.case.quote .title-container {
+  position: relative;
+}
+
+.case.quote .more-info {
+  position: absolute;
+  top: 0;
+  left: 184px;
+}
+
+.case.quote .quote-text {
+  width: 554px;
 }
