@@ -36,16 +36,13 @@ mobileServiceLink.addEventListener("click", toggleMobileServices);
 const openBtn = document.querySelectorAll(".more-info");
 const closeBtn = document.querySelector(".close-modal-btn");
 const modal = document.querySelector(".backdrop");
-console.log(closeBtn);
-
-openBtn.forEach((button) => button.addEventListener("click", toggleModal));
 
 function toggleModal() {
-  modal.classList.toggle("is-hidden");
-  document.body.style.overflow = modal.classList.contains("is-hidden")
+    modal.classList.toggle("is-hidden");
+    document.body.style.overflow = modal.classList.contains("is-hidden")
     ? "auto"
     : "hidden";
 }
 
-// openBtn.addEventListener('click', toggleModal);
+openBtn.forEach((button) => button.addEventListener("click", toggleModal));
 closeBtn.addEventListener("click", toggleModal);
