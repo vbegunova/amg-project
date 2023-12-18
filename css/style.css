@@ -3189,6 +3189,13 @@ display: none;
   width: 230px;
 }
 
+@media screen and (min-width: 1440px) {
+  .service_page.questions .question-item-title {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+
 .cctv_monitoring.service_page.quote .more-info {
   position: absolute;
   top: 0;
