@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AMG Security</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
     <header>
       <div class="container header-nav">
         <nav class="navigation">
-          <a href="./index.html" class="logo">
+          <a href="../index.html" class="logo">
             <div class="logo-emblema">
               <p class="logo-emblema text first">AMG</p>
               <p class="logo-emblema text second">Security</p>
@@ -34,23 +20,23 @@
             aria-controls="mobile-menu"
           >
             <svg width="30" height="20">
-              <use href="./images/sprite.svg#icon-burger"></use>
+              <use href="../images/sprite.svg#icon-burger"></use>
             </svg>
           </button>
           <ul class="nav-list">
-            <li><a href="./about-us.html">About us</a></li>
+            <li><a href="../about-us.html">About us</a></li>
             <li class="nav-item-service">
               <a href="#" class="services-menu"
                 >Services
                 <svg class="services-arrow-down" width="10" height="10">
-                  <use href="./images/sprite.svg#icon-arrow-down"></use>
+                  <use href="../images/sprite.svg#icon-arrow-down"></use>
                 </svg>
               </a>
             </li>
-            <li><a href="./guards-skills.html">The skills of guards</a></li>
-            <li><a href="./index.html#cases">Projects</a></li>
-            <li><a href="./career.html">Career</a></li>
-            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="../guards-skills.html">The skills of guards</a></li>
+            <li><a href="../index.html#cases">Projects</a></li>
+            <li><a href="../career.html">Career</a></li>
+            <li><a href="../blog.html">Blog</a></li>
             <li><a href="#footer">Contact us</a></li>
           </ul>
 
@@ -62,61 +48,61 @@
 
           <ul class="header-services-list">
             <li class="item">
-              <a class="link" href="./services/estate-security.html"
+              <a class="link" href="./estate-security.html"
                 >Real estate security</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/cctv-monitoring.html"
+              <a class="link" href="./cctv-monitoring.html"
                 >CCTV monitoring</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/personal-protection.html"
+              <a class="link" href="./personal-protection.html"
                 >Personal protection</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/security-consultancy.html"
+              <a class="link" href="./security-consultancy.html"
                 >Security consultancy</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/residential-security.html"
+              <a class="link" href="./residential-security.html"
                 >Residential security</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/escort-service.html"
+              <a class="link" href="./escort-service.html"
                 >Аccompanying service</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/family-security.html"
+              <a class="link" href="./family-security.html"
                 >Family security</a
               >
             </li>
             <li class="line"></li>
-            <li class="item">
-              <a class="link" href="./services/cctv-installation.html"
+            <li class="item active">
+              <a class="link" href="./cctv-installation.html"
                 >CCTV Installation</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link events" href="./services/events-security.html"
+              <a class="link events" href="./events-security.html"
                 >Events and licensed premises security</a
               >
             </li>
             <li class="line"></li>
             <li class="item">
-              <a class="link" href="./services/drone-security.html"
+              <a class="link" href="./drone-security.html"
                 >AMG Drone Security</a
               >
             </li>
@@ -125,55 +111,13 @@
       </div>
     </header>
 
-    <main>
-      <section class="blog-section">
-        <div class="container">
-          <h1 class="title">Our blog</h1>
-          <div class="slider-box">
-            <ul class="list">
-              <li class="item">
-                <img class="img" src="./images/blog/img-first.jpg" alt="" />
-                <div class="item-thumb">
-                  <h2 class="title">Lorem ipsum</h2>
-                  <p class="text">
-                    Lorem ipsum is placeholder text commonly used in the
-                    graphic, print
-                  </p>
-                  <a href="./news.html" class="more-info-btn">More info</a>
-                </div>
-              </li>
-              <li class="item">
-                <img class="img" src="./images/blog/img-second.jpg" alt="" />
-                <div class="item-thumb">
-                  <h2 class="title">Lorem ipsum</h2>
-                  <p class="text">
-                    Lorem ipsum is placeholder text commonly used in the
-                    graphic, print
-                  </p>
-                  <a href="./news.html" class="more-info-btn">More info</a>
-                </div>
-              </li>
-              <li class="item">
-                <img class="img" src="./images/blog/img-third.jpg" alt="" />
-                <div class="item-thumb">
-                  <h2 class="title">Lorem ipsum</h2>
-                  <p class="text">
-                    Lorem ipsum is placeholder text commonly used in the
-                    graphic, print
-                  </p>
-                  <a href="./news.html" class="more-info-btn">More info</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-dots"></div>
-        </div>
-      </section>
+
+// ========================================================
 
       <div class="menu-container js-menu-container" id="mobile-menu">
         <div class="container">
           <div class="navigation">
-            <a href="./index.html" class="logo">
+            <a href="../index.html" class="logo">
               <div class="logo-emblema">
                 <p class="logo-emblema text first">AMG</p>
                 <p class="logo-emblema text second">Security</p>
@@ -189,97 +133,100 @@
               class="cross-button menu-toggle js-close-menu"
             >
               <svg width="30" height="30">
-                <use href="./images/sprite.svg#icon-cross"></use>
+                <use href="../images/sprite.svg#icon-cross"></use>
               </svg>
             </button>
           </div>
 
           <ul class="mobile-menu-navigation">
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="./about-us.html">About us</a>
+              <a class="mobile-menu-link" href="../about-us.html">About us</a>
             </li>
             <li class="mobile-menu-item service">
-              <a class="mobile-menu-link service" href="#">
+              <a
+                class="mobile-menu-link service"
+                href="#"
+              >
                 Services
                 <svg class="services-arrow-down" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-arrow-down-mobile"></use>
+                  <use href="../images/sprite.svg#icon-arrow-down-mobile"></use>
                 </svg>
               </a>
               <ul class="mobile-services-list">
                 <li class="item">
-                  <a class="link" href="./services/estate-security.html"
+                  <a class="link" href="./estate-security.html"
                     >Real estate security</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/cctv-monitoring.html"
+                  <a class="link" href="./cctv-monitoring.html"
                     >CCTV monitoring</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/personal-protection.html"
+                  <a class="link" href="./personal-protection.html"
                     >Personal protection</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/security-consultancy.html"
+                  <a class="link" href="./security-consultancy.html"
                     >Security consultancy</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/residential-security.html"
+                  <a class="link" href="./residential-security.html"
                     >Residential security</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/escort-service.html"
+                  <a class="link" href="./escort-service.html"
                     >Аccompanying service</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/family-security.html"
+                  <a class="link" href="./family-security.html"
                     >Family security</a
                   >
                 </li>
                 <li class="line"></li>
-                <li class="item">
-                  <a class="link" href="./services/cctv-installation.html"
+                <li class="item active">
+                  <a class="link" href="./cctv-installation.html"
                     >CCTV Installation</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link events" href="./services/events-security.html"
+                  <a class="link events" href="./events-security.html"
                     >Events and licensed premises security</a
                   >
                 </li>
                 <li class="line"></li>
                 <li class="item">
-                  <a class="link" href="./services/drone-security.html"
+                  <a class="link" href="./drone-security.html"
                     >AMG Drone Security</a
                   >
                 </li>
-              </ul>
+              </ul>    
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="./guards-skills.html"
+              <a class="mobile-menu-link" href="../guards-skills.html"
                 >The skills of guards</a
               >
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="./index.html#cases">Projects</a>
+              <a class="mobile-menu-link" href="../index.html#cases">Projects</a>
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="./career.html">Career</a>
+              <a class="mobile-menu-link" href="../career.html">Career</a>
             </li>
             <li class="mobile-menu-item">
-              <a class="mobile-menu-link" href="./blog.html">Blog</a>
+              <a class="mobile-menu-link" href="../blog.html">Blog</a>
             </li>
             <li class="mobile-menu-item">
               <a class="mobile-menu-link contact-us" href="#footer">Contact us</a>
@@ -293,12 +240,16 @@
           </div>
         </div>
       </div>
-    </main>
+
+
+
+// =============================================================
+
 
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-main">
-          <a href="./index.html" class="footer-logo">
+          <a href="/index.html" class="footer-logo">
             <div class="footer-logo-emblema">
               <p class="footer-logo-emblema text first">AMG</p>
               <p class="footer-logo-emblema text second">Security</p>
@@ -315,62 +266,28 @@
           <div class="footer-navigation">
             <h4 class="footer-title">Navigation</h4>
             <ul class="footer-nav-list">
-              <li><a href="./about-us.html">About us</a></li>
-              <li><a href="./index.html#services">Services</a></li>
-              <li><a href="./guards-skills.html">The skills of guards</a></li>
-              <li><a href="./index.html#cases">Projects</a></li>
-              <li><a href="./career.html">Career</a></li>
-              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="../about-us.html">About us</a></li>
+              <li><a href="../index.html#services">Services</a></li>
+              <li><a href="../guards-skills.html">The skills of guards</a></li>
+              <li><a href="../index.html#cases">Projects</a></li>
+              <li><a href="../career.html">Career</a></li>
+              <li><a href="../blog.html">Blog</a></li>
               <li><a href="#footer">Contact us</a></li>
             </ul>
           </div>
           <div class="footer-services">
             <h4 class="footer-title">Our services</h4>
             <ul class="footer-services-list">
-              <li>
-                <a href="./services/estate-security.html"
-                  >Real estate security</a
-                >
-              </li>
-              <li>
-                <a href="./services/cctv-monitoring.html">CCTV monitoring</a>
-              </li>
-              <li>
-                <a href="./services/personal-protection.html"
-                  >Personal protection</a
-                >
-              </li>
-              <li>
-                <a href="./services/security-consultancy.html"
-                  >Security consultancy</a
-                >
-              </li>
-              <li>
-                <a href="./services/residential-security.html"
-                  >Residential security</a
-                >
-              </li>
-              <li>
-                <a href="./services/escort-service.html"
-                  >Аccompanying service</a
-                >
-              </li>
-              <li>
-                <a href="./services/family-security.html">Family security</a>
-              </li>
-              <li>
-                <a href="./services/cctv-installation.html"
-                  >CCTV Installation</a
-                >
-              </li>
-              <li>
-                <a href="./services/events-security.html"
-                  >Events and licensed premises security</a
-                >
-              </li>
-              <li>
-                <a href="./services/drone-security.html">AMG Drone Security</a>
-              </li>
+              <li><a href="./estate-security.html">Real estate security</a></li>
+              <li><a href="./cctv-monitoring.html">CCTV monitoring</a></li>
+              <li><a href="./personal-protection.html">Personal protection</a></li>
+              <li><a href="./security-consultancy.html">Security consultancy</a></li>
+              <li><a href="./residential-security.html">Residential security</a></li>
+              <li><a href="./escort-service.html">Аccompanying service</a></li>
+              <li><a href="./family-security.html">Family security</a></li>
+              <li><a href="./cctv-installation.html">CCTV Installation</a></li>
+              <li><a href="./events-security.html">Events and licensed premises security</a></li>
+              <li><a href="./drone-security.html">AMG Drone Security</a></li>
             </ul>
           </div>
         </div>
@@ -397,7 +314,3 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/blog-slider.js"></script>
-  </body>
-</html>
