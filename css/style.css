@@ -126,83 +126,82 @@ button {
 .logo {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 16px;
+  align-items: end;
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .logo {
     gap: 20px;
   }
-}
+} */
 
 .logo-emblema {
+  margin-right: 8px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 @media screen and (min-width: 1440px) {
   .logo-emblema {
-    gap: 13px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+
+.logo-emblema .logo-icon {
+  width: 42px;
+  height: 42px;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo-emblema .logo-icon {
+    width: 55px;
+    height: 55px;
   }
 }
 
 .logo-emblema .text {
   color: #fff;
-  font-family: "Forum", serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 0.48;
+  font-family: "Gilroy", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 0.9;
   text-transform: uppercase;
-}
-
-.logo-emblema .text.first {
-  font-size: 41px;
-  letter-spacing: -1.23px;
-}
-
-@media screen and (min-width: 1440px) {
-  .logo-emblema .text.first {
-    font-size: 52px;
-    letter-spacing: -1.5px;
-  }
-}
-
-.logo-emblema .text.second {
-  font-size: 20px;
   letter-spacing: -0.6px;
 }
 
 @media screen and (min-width: 1440px) {
-  .logo-emblema .text.second {
-    font-size: 25px;
-    letter-spacing: -0.8px;
+  .logo-emblema .text {
+    font-size: 29px;
+    letter-spacing: -0.9px;
   }
 }
 
 .logo-line {
+  margin-bottom: 2px;
+  margin-right: 12px;
   width: 1px;
-  height: 29px;
+  height: 22px;
   background-color: rgba(247, 247, 247, 0.4);
 }
 
 @media screen and (min-width: 1440px) {
   .logo-line {
-    height: 35px;
+    margin-right: 15px;
+    height: 29px;
   }
 }
 
 .logo-text {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 1.15;
 }
 
 @media screen and (min-width: 1440px) {
   .logo-text {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 
