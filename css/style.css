@@ -129,12 +129,6 @@ button {
   align-items: end;
 }
 
-/* @media screen and (min-width: 1440px) {
-  .logo {
-    gap: 20px;
-  }
-} */
-
 .logo-emblema {
   margin-right: 8px;
   display: flex;
@@ -2345,9 +2339,7 @@ display: none;
 .footer-logo {
   margin-bottom: 26px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 21px;
+  align-items: end;
   justify-content: center;
 }
 
@@ -2355,78 +2347,78 @@ display: none;
   .footer-logo {
     margin-right: 155px;
     margin-bottom: 274px;
-    padding-top: 11px;
-    gap: 26px;
+    align-items: end;
     justify-content: left;
   }
 }
 
-.footer-logo-emblema {
+.footer .logo-emblema {
+  margin-right: 7px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-logo-emblema {
-    gap: 18px;
+  .footer .logo-emblema {
+    margin-right: 13px;
+    gap: 12px;
   }
 }
 
-.footer-logo-emblema .text {
+.footer .logo-emblema .logo-icon {
+  width: 42px;
+  height: 42px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer .logo-emblema .logo-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.footer .logo-emblema .text {
   color: #fff;
-  font-family: "Forum", serif;
-  font-style: normal;
-  line-height: 0.48;
+  font-family: "Gilroy", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 0.9;
   text-transform: uppercase;
-}
-
-.footer-logo-emblema .text.first {
-  font-size: 41px;
-  letter-spacing: -1.23px;
-}
-
-@media screen and (min-width: 1440px) {
-  .footer-logo-emblema .text.first {
-    font-size: 70px;
-    letter-spacing: -2.1px;
-  }
-}
-
-.footer-logo-emblema .text.second {
-  font-size: 20px;
   letter-spacing: -0.6px;
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-logo-emblema .text.second {
-    font-size: 34px;
+  .footer .logo-emblema .text {
+    font-size: 36px;
     letter-spacing: -1px;
   }
 }
 
-.footer-logo-line {
+.footer .logo-line {
+  margin-bottom: 2px;
+  margin-right: 12px;
   width: 1px;
-  height: 29px;
+  height: 22px;
   background-color: rgba(247, 247, 247, 0.4);
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-logo-line {
-    height: 48px;
+  .footer .logo-line {
+    margin-right: 19px;
+    height: 36px;
   }
 }
 
-.footer-logo-text {
-  font-size: 13px;
+.footer .logo-text {
+  font-size: 11px;
   font-weight: 400;
   line-height: 1.15;
 }
 
 @media screen and (min-width: 1440px) {
-  .footer-logo-text {
-    font-size: 18px;
+  .footer .logo-text {
+    font-size: 16px;
   }
 }
 
