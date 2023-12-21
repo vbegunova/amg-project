@@ -264,7 +264,7 @@ button {
 }
 
 .header-services-list {
-display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1440px) {
@@ -274,10 +274,9 @@ display: none;
     top: 60px;
     left: 440px;
     width: 227px;
-    height: 436px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 14px 134px 0px rgba(0, 0, 0, 0.95);
@@ -294,11 +293,11 @@ display: none;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   
   .header-services-list .item .link.events {
-    line-height: 1.2;
+    
   }
   
   .header-services-list .line {
@@ -400,7 +399,7 @@ display: none;
 @media screen and (min-width: 1440px) {
   .hero .title {
     margin-bottom: 29px;
-    width: 621px;
+    width: 743px;
   }
 }
 
@@ -805,14 +804,17 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .adv-item-title {
-    padding: 31px 50px 30px 43px;
+    padding-right: 50px;
+    padding-left: 43px;
     height: 92px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .advantages .item-title {
+  width: 100%;
   margin: 0;
   text-align: left;
   margin-bottom: 0;
@@ -969,6 +971,12 @@ display: none;
   line-height: 0.9;
 }
 
+.quote .title.ua {
+  width: 150px;
+  text-transform: none;
+}
+
+
 .quote .title-container {
   display: flex;
   gap: 9px;
@@ -994,6 +1002,7 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .quote .title {
+    width: 100%;
     margin-bottom: 20px;
     font-size: 81px;
   }
@@ -1119,6 +1128,7 @@ display: none;
 }
 
 .audience .title {
+  width: 250px;
   margin-bottom: 12px;
   font-size: 28px;
   color: #fff;
@@ -1127,9 +1137,9 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .audience .title {
+    width: 100%;
     margin-bottom: 21px;
     font-size: 81px;
-    text-align: center;
   }
 }
 
@@ -1143,12 +1153,9 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .audience .description {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 46px;
-    width: 525px;
+    width: 100%;
     color: rgba(247, 247, 247, 0.8);
-    text-align: center;
     font-size: 18px;
   }
 }
@@ -1232,6 +1239,7 @@ display: none;
 }
 
 .audience .item-title {
+  width: 100%;
   margin-bottom: 6px;
   text-align: left;
   font-size: 16px;
@@ -1281,6 +1289,11 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
+
+  .quiz .head.ua {
+    margin-bottom: 0;
+    display: block;
+  }
 }
 
 .quiz .title {
@@ -1295,6 +1308,12 @@ display: none;
     width: 729px;
     font-size: 81px;
   }
+
+  .quiz .head.ua .title {
+    margin-bottom: 15px;
+    font-size: 76px;
+    width: 100%;
+  }
 }
 
 .quiz .label {
@@ -1307,6 +1326,11 @@ display: none;
   .quiz .label {
     padding-top: 36px;
     font-size: 28px;
+  }
+
+  .quiz .head.ua .label {
+    margin-bottom: 37px;
+    padding-top: 0;
   }
 }
 
@@ -1514,7 +1538,6 @@ display: none;
 
 .principles .title {
   margin-bottom: 11px;
-  width: 209px;
   font-size: 28px;
   color: #fff;
 }
@@ -1522,9 +1545,6 @@ display: none;
 @media screen and (min-width: 1440px) {
   .principles .title {
     margin-bottom: 45px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 609px;
     font-size: 81px;
     text-align: center;
   }
@@ -1892,6 +1912,7 @@ display: none;
 @media screen and (min-width: 1440px) {
   .drone-img {
     display: block;
+    object-fit: cover;
   }
 }
 
@@ -2013,6 +2034,10 @@ display: none;
   .responsibility-item .description {
     width: 320px;
     font-size: 18px;
+  }
+
+  .responsibility-item.ua .description {
+    font-size: 16px;
   }
 }
 
@@ -2333,6 +2358,7 @@ display: none;
     position: static;
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -2345,10 +2371,14 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .footer-logo {
-    margin-right: 155px;
+    margin-right: 54px;
     margin-bottom: 274px;
     align-items: end;
     justify-content: left;
+  }
+
+  .footer-main.ua .footer-logo {
+    margin-bottom: 370px;
   }
 }
 
@@ -2441,18 +2471,13 @@ display: none;
 
 .footer-box-menu {
   margin-bottom: 117px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 304px;
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (min-width: 1440px) {
   .footer-box-menu {
-    width: 407px;
     display: flex;
-    justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -2469,7 +2494,7 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .footer-nav-list {
-    margin-right: 102px;
+    margin-right: 110px;
     gap: 12px;
     font-size: 16px;
   }
@@ -2486,6 +2511,7 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .footer-services-list {
+    margin-right: auto;
     width: 166px;
     gap: 12px;
     font-size: 16px;
@@ -2501,7 +2527,6 @@ display: none;
 @media screen and (min-width: 1440px) {
   .footer-contacts {
     position: static;
-    margin-left: auto;
   }
 }
 
@@ -2514,10 +2539,9 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .footer-contacts-list {
-    margin-bottom: 37px;
+    margin-bottom: 16px;
     display: flex;
-    flex-direction: row;
-    gap: 23px;
+    gap: 20px;
   }
 }
 
@@ -2571,7 +2595,7 @@ display: none;
 
 @media screen and (min-width: 1440px) {
   .footer-link-item:not(:last-child) {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 }
 
@@ -2640,6 +2664,10 @@ display: none;
     margin-bottom: 22px;
     width: 537px;
     font-size: 81px;
+  }
+
+  .about_us-hero .title.ua {
+    width: 100%;
   }
 }
 
@@ -2889,10 +2917,18 @@ display: none;
   line-height: 1.15;
 }
 
+.about_us-why-prestigious .list.ua .description {
+  font-size: 10px;
+}
+
 @media screen and (min-width: 1440px) {
   .about_us-why-prestigious .item .description {
     font-size: 18px;
     font-weight: 300;
+  }
+
+  .about_us-why-prestigious .list.ua .description {
+    font-size: 16px;
   }
 }
 
@@ -2912,6 +2948,7 @@ display: none;
 
 .about_us-about-guards img {
   display: none;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3113,6 +3150,10 @@ display: none;
   text-transform: none;
 }
 
+.about_us.quote .title.ua {
+  width: 152px;
+}
+
 @media screen and (min-width: 1440px) {
   .about_us.quote .title {
     margin-bottom: 17px;
@@ -3123,6 +3164,12 @@ display: none;
 
 .about_us.quote .quote-text {
   width: 419px;
+}
+
+@media screen and (min-width: 1440px) {
+  .about_us.quote .quote-text.ua {
+    width: 550px;
+  }
 }
 
 /* Service page Quote */
@@ -3187,10 +3234,24 @@ display: none;
   }
 }
 
+.cctv_monitoring.service_page.quote .title {
+  width: 261px;
+}
+
+@media screen and (min-width: 1440px) {
+  .cctv_monitoring.service_page.quote .title {
+    width: 100%;
+  }
+}
+
 .cctv_monitoring.service_page.quote .more-info {
   position: absolute;
   top: 0;
   left: 178px;
+}
+
+.cctv_monitoring.service_page.quote .title-container.ua .more-info {
+  left: 210px;
 }
 
 /* CCTV Monitoring Hero */
@@ -3375,8 +3436,8 @@ display: none;
   padding-top: 27px;
   padding-left: 29px;
   padding-right: 28px;
+  padding-bottom: 27px;
   width: 304px;
-  height: 207px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3386,8 +3447,9 @@ display: none;
   .service_page-about-service .item {
     padding-top: 44px;
     padding-left: 49px;
+    padding-bottom: 44px;
     width: 607px;
-    height: 388px;
+    min-height: 388px;
   }
 }
 
@@ -3716,6 +3778,10 @@ display: none;
 .estate_security.service_page.quote .title {
   width: 155px;
   margin-bottom: 16px;
+}
+
+.estate_security.service_page.quote .title.ua {
+  width: 219px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4813,7 +4879,7 @@ display: none;
 @media screen and (min-width: 1440px) {
   .guards_skills-hero .title {
     margin-bottom: 14px;
-    width: 600px;
+    width: 734px;
     font-size: 81px;
   }
 }
@@ -5033,6 +5099,7 @@ display: none;
   .guards_skills-technologies .img-desktop {
     display: block;
     border-radius: 3px;
+    object-fit: cover;
   }
 }
 
@@ -5328,7 +5395,7 @@ display: none;
   padding-left: 21px;
   padding-bottom: 19px;
   width: 304px;
-  height: 204px;
+  /* height: 204px; */
   background-color: #0f252e;
 }
 
@@ -5337,8 +5404,9 @@ display: none;
     padding-top: 30px;
     padding-right: 47px;
     padding-left: 39px;
+    padding-bottom: 53px;
     width: 400px;
-    height: 415px;
+    /* height: 415px; */
     background-color: #0f252e;
   }
 }
@@ -5645,6 +5713,10 @@ display: none;
     margin-bottom: 19px;
     font-size: 63px;
   }
+
+  .career.quote .titl.ua {
+    width: 563px;
+  }
 }
 
 /* Mobile menu */
@@ -5705,7 +5777,7 @@ display: none;
 }
 
 .mobile-menu-item.service.is-open {
-  max-height: 500px;
+  max-height: 700px;
   transition: max-height 300ms ease;
 }
 
@@ -5737,10 +5809,6 @@ display: none;
   color: #fff;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.5;
-}
-
-.mobile-services-list .item .link.events {
   line-height: 1.2;
 }
 
