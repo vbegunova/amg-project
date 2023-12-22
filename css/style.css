@@ -409,7 +409,7 @@ button {
   justify-content: space-between;
 }
 
-.hero .button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,11 +423,24 @@ button {
   border: none;
 }
 
+.button.ua {
+  text-transform: none;
+  font-size: 16px;
+  width: 250px;
+}
+
 @media screen and (min-width: 1440px) {
-  .hero .button {
+  .button,
+  .button.ua {
     width: 332px;
     height: 94px;
     font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .button.ua {
+    width: 402px;
+    text-transform: none;
   }
 }
 
@@ -739,8 +752,13 @@ button {
   color: #fff;
 }
 
+.advantages .title.ua {
+  width: 213px;
+}
+
 @media screen and (min-width: 1440px) {
-  .advantages .title {
+  .advantages .title,
+  .advantages .title.ua {
     margin-bottom: 54px;
     width: 100%;
     font-size: 81px;
@@ -2688,28 +2706,6 @@ button {
   }
 }
 
-.about_us-hero .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 214px;
-  height: 61px;
-  background: #fff;
-  color: #141414;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-}
-
-@media screen and (min-width: 1440px) {
-  .about_us-hero .button {
-    width: 332px;
-    height: 94px;
-    font-size: 24px;
-  }
-}
-
 /* About Us About */
 .about_us-about {
   padding-top: 30px;
@@ -3289,13 +3285,14 @@ button {
 }
 
 .cctv_monitoring.service_page-hero .title {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .service_page-hero .title {
   margin-bottom: 9px;
   color: #fff;
-  font-size: 41px;
+  /* font-size: 41px; */
+  font-size: 35px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -3328,28 +3325,6 @@ button {
   .service_page-hero .text {
     margin-bottom: 21px;
     font-size: 18px;
-  }
-}
-
-.service_page-hero .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 214px;
-  height: 61px;
-  background-color: #fff;
-  color: #141414;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-}
-
-@media screen and (min-width: 1440px) {
-  .service_page-hero .button {
-    width: 332px;
-    height: 94px;
-    font-size: 24px;
   }
 }
 
@@ -3844,7 +3819,7 @@ button {
 
 @media screen and (min-width: 1440px) {
   .family_security.service_page-about-service .item .description {
-    font-size: 11px;
+    font-size: 21px;
   }
 
   .family_security.service_page-about-service .item:nth-child(1) {
@@ -3905,9 +3880,18 @@ button {
   width: 230px;
 }
 
+.family_security.service_page.quote .title.ua {
+  width: 264px;
+}
+
 @media screen and (min-width: 1440px) {
   .family_security.service_page.quote .title {
     width: 410px;
+  }
+
+  .family_security.service_page.quote .title.ua {
+    font-size: 71px;
+    width: 550px;
   }
 }
 
@@ -4046,11 +4030,19 @@ button {
   width: 273px;
 }
 
+.escort_service.service_page.quote .title.ua {
+  width: 269px;
+}
+
 @media screen and (min-width: 1440px) {
   .escort_service.service_page.quote .title {
     margin-bottom: 23px;
     font-size: 71px;
     width: 550px;
+  }
+
+  .escort_service.service_page.quote .title.ua {
+    font-size: 61px;
   }
 }
 
@@ -4176,6 +4168,10 @@ button {
   width: 236px;
 }
 
+.personal_protection.service_page.quote .title.ua {
+  width: 195px;
+}
+
 @media screen and (min-width: 1440px) {
   .personal_protection.service_page.quote .title {
     margin-bottom: 6px;
@@ -4283,6 +4279,10 @@ button {
   width: 239px;
 }
 
+.security_consultancy.service_page.quote .title.ua { 
+  width: 216px;
+}
+
 @media screen and (min-width: 1440px) {
   .security_consultancy.service_page.quote .title {
     margin-bottom: 10px;
@@ -4321,7 +4321,7 @@ button {
   }
 
   .security_consultancy.service_page-stages .item:nth-child(6) {
-    padding-right: 95px;
+    padding-right: 68px;
   }
 }
 
@@ -4433,10 +4433,18 @@ button {
   width: 235px;
 }
 
+.residential_security.service_page.quote .title.ua {
+  width: 254px;
+}
+
 @media screen and (min-width: 1440px) {
   .residential_security.service_page.quote .title {
     margin-bottom: 10px;
     width: 457px;
+  }
+
+  .residential_security.service_page.quote .title.ua {
+    width: 554px;
   }
 }
 
@@ -4567,15 +4575,28 @@ button {
   width: 243px;
 }
 
+.cctv_installation.service_page.quote .title.ua {
+  width: 270px;
+}
+
 @media screen and (min-width: 1440px) {
   .cctv_installation.service_page.quote .title {
     margin-bottom: 17px;
     width: 471px;
   }
+
+  .cctv_installation.service_page.quote .title.ua {
+    width: 550px;
+    font-size: 71px;
+  }
 }
 
 .cctv_installation.service_page.quote .quote-text {
   width: 471px;
+}
+
+.cctv_installation.service_page.quote .quote-text.ua {
+  width: 516px;
 }
 
 /* Events security Hero */
@@ -4828,8 +4849,13 @@ button {
   width: 211px;
 }
 
+.drone_security.service_page.quote .title.ua {
+  width: 270px;
+}
+
 @media screen and (min-width: 1440px) {
-  .drone_security.service_page.quote .title {
+  .drone_security.service_page.quote .title,
+  .drone_security.service_page.quote .title.ua {
     margin-bottom: 15px;
     font-size: 71px;
     width: 546px;
@@ -4897,28 +4923,6 @@ button {
     margin-bottom: 21px;
     color: #fff;
     font-size: 18px;
-  }
-}
-
-.guards_skills-hero .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 214px;
-  height: 61px;
-  background: #fff;
-  color: #141414;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-}
-
-@media screen and (min-width: 1440px) {
-  .guards_skills-hero .button {
-    width: 332px;
-    height: 94px;
-    font-size: 24px;
   }
 }
 
@@ -5307,28 +5311,6 @@ button {
   .career-hero .text {
     margin-bottom: 21px;
     font-size: 18px;
-  }
-}
-
-.career-hero .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 214px;
-  height: 61px;
-  background: #fff;
-  color: #141414;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-}
-
-@media screen and (min-width: 1440px) {
-  .career-hero .button {
-    width: 332px;
-    height: 94px;
-    font-size: 24px;
   }
 }
 
@@ -5861,29 +5843,6 @@ button {
     margin-bottom: 28px;
     width: 674px;
     font-size: 81px;
-  }
-}
-
-.case-hero .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 214px;
-  height: 61px;
-  background-color: #fff;
-  border: none;
-  color: #141414;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width: 1440px) {
-  .case-hero .button {
-    width: 332px;
-    height: 94px;
-    font-size: 24px;
   }
 }
 
