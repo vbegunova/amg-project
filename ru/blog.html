@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMG Security</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container header-nav">
+        <nav class="navigation">
+          <a href="./index.html" class="logo">
+            <div class="logo-emblema">
+              <svg class="logo-icon">
+                <use href="../images/sprite.svg#icon-logo"></use>
+              </svg>
+              <p class="text">
+                AMG<br />
+                Security
+              </p>
+            </div>
+            <div class="logo-line"></div>
+            <p class="logo-text">
+              Your Safety <br />
+              Our Duty
+            </p>
+          </a>
+
+          <button
+            type="button"
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="30" height="20">
+              <use href="../images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <ul class="nav-list">
+            <li><a href="./about-us.html">Про нас</a></li>
+            <li class="nav-item-service">
+              <a href="#" class="services-menu"
+                >Послуги
+                <svg class="services-arrow-down" width="10" height="10">
+                  <use href="../images/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+            </li>
+            <li><a href="./guards-skills.html">Кваліфікіція команди</a></li>
+            <li><a href="./index.html#cases">Відгуки</a></li>
+            <li><a href="./career.html">Кар'єра</a></li>
+            <li><a href="./blog.html">Блог</a></li>
+            <li><a href="#footer">Зв'язок</a></li>
+          </ul>
+
+          <div class="langs">
+            <a href="../blog.html" class="lang-label">Eng</a>
+            <div class="lang-line"></div>
+            <a class="lang-label active">Ua</a>
+          </div>
+
+          <ul class="header-services-list">
+            <li class="item">
+              <a class="link" href="./services/estate-security.html"
+                >Безпека нерухомості</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/cctv-monitoring.html"
+                >Моніторинг за допомогою камер</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/personal-protection.html"
+                >Особистий захист</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/security-consultancy.html"
+                >Консультації з питань безпеки</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/residential-security.html"
+                >Охорона житла</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/escort-service.html"
+                >Супроводжувальний сервіс</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/family-security.html"
+                >Безпека сім'ї</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/cctv-installation.html"
+                >Встановлення відеоспостереження</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link events" href="./services/events-security.html"
+                >Охорона заходів та ліцензованих приміщень</a
+              >
+            </li>
+            <li class="line"></li>
+            <li class="item">
+              <a class="link" href="./services/drone-security.html"
+                >Система безпеки безпілотників AMG</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-section">
+        <div class="container">
+          <h1 class="title">Наш блог</h1>
+          <div class="slider-box">
+            <ul class="list">
+              <li class="item">
+                <img class="img" src="../images/blog/img-first.jpg" alt="Blog" />
+                <div class="item-thumb">
+                  <h2 class="title">Lorem ipsum</h2>
+                  <p class="text">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print
+                  </p>
+                  <a href="./news.html" class="more-info-btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="item">
+                <img class="img" src="../images/blog/img-second.jpg" alt="Blog" />
+                <div class="item-thumb">
+                  <h2 class="title">Lorem ipsum</h2>
+                  <p class="text">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print
+                  </p>
+                  <a href="./news.html" class="more-info-btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="item">
+                <img class="img" src="../images/blog/img-third.jpg" alt="Blog" />
+                <div class="item-thumb">
+                  <h2 class="title">Lorem ipsum</h2>
+                  <p class="text">
+                    Lorem ipsum is placeholder text commonly used in the
+                    graphic, print
+                  </p>
+                  <a href="./news.html" class="more-info-btn">Детальніше</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-dots"></div>
+        </div>
+      </section>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="container">
+          <div class="navigation">
+            <a href="./index.html" class="logo">
+              <div class="logo-emblema">
+                <svg class="logo-icon">
+                  <use href="../images/sprite.svg#icon-logo"></use>
+                </svg>
+                <p class="text">
+                  AMG<br />
+                  Security
+                </p>
+              </div>
+              <div class="logo-line"></div>
+              <p class="logo-text">
+                Your Safety <br />
+                Our Duty
+              </p>
+            </a>
+            <button
+              type="button"
+              class="cross-button menu-toggle js-close-menu"
+            >
+              <svg width="30" height="30">
+                <use href="../images/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mobile-menu-navigation">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./about-us.html">Про нас</a>
+            </li>
+            <li class="mobile-menu-item service">
+              <a class="mobile-menu-link service" href="#">
+                Послуги
+                <svg class="services-arrow-down" width="20" height="20">
+                  <use href="../images/sprite.svg#icon-arrow-down-mobile"></use>
+                </svg>
+              </a>
+              <ul class="mobile-services-list">
+                <li class="item">
+                  <a class="link" href="./services/estate-security.html"
+                    >Безпека нерухомості</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/cctv-monitoring.html"
+                    >Моніторинг за допомогою камер</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/personal-protection.html"
+                    >Особистий захист</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/security-consultancy.html"
+                    >Консультації з питань безпеки</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/residential-security.html"
+                    >Охорона житла</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/escort-service.html"
+                    >Супроводжувальний сервіс</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/family-security.html"
+                    >Безпека сім'ї</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/cctv-installation.html"
+                    >Встановлення відеоспостереження</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link events" href="./services/events-security.html"
+                    >Охорона заходів та ліцензованих приміщень</a
+                  >
+                </li>
+                <li class="line"></li>
+                <li class="item">
+                  <a class="link" href="./services/drone-security.html"
+                    >Система безпеки безпілотників AMG</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./guards-skills.html"
+                >Кваліфікіція команди</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html#cases">Відгуки</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./career.html">Кар'єра</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./blog.html">Блог</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link contact-us" href="#footer"
+                >Зв'язок</a
+              >
+            </li>
+          </ul>
+
+          <div class="langs">
+            <a href="../blog.html" class="lang-label">Eng</a>
+            <div class="lang-line"></div>
+            <a class="lang-label active">Ua</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-main ua">
+          <a href="./index.html" class="footer-logo">
+            <div class="logo-emblema">
+              <svg class="logo-icon">
+                <use href="../images/sprite.svg#icon-logo"></use>
+              </svg>
+              <p class="text">
+                AMG<br />
+                Security
+              </p>
+            </div>
+            <div class="logo-line"></div>
+            <p class="logo-text">
+              Your Safety <br />
+              Our Duty
+            </p>
+          </a>
+          <p class="footer-copyright">@2023 AMG Security</p>
+        </div>
+        <div class="footer-box-menu">
+          <div class="footer-navigation">
+            <h4 class="footer-title">Навігація</h4>
+            <ul class="footer-nav-list">
+              <li><a href="./about-us.html">Про нас</a></li>
+              <li><a href="./index.html#services">Послуги</a></li>
+              <li><a href="./guards-skills.html">Кваліфікація команди</a></li>
+              <li><a href="./index.html#cases">Відгуки</a></li>
+              <li><a href="./career.html">Кар'єра</a></li>
+              <li><a href="./blog.html">Блог</a></li>
+              <li><a href="#footer">Зв'язок</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4 class="footer-title">Послуги</h4>
+            <ul class="footer-services-list">
+              <li>
+                <a href="./services/estate-security.html"
+                  >Безпека нерухомості</a
+                >
+              </li>
+              <li>
+                <a href="./services/cctv-monitoring.html">Моніторинг за допомогою камер</a>
+              </li>
+              <li>
+                <a href="./services/personal-protection.html"
+                  >Особистий захист</a
+                >
+              </li>
+              <li>
+                <a href="./services/security-consultancy.html"
+                  >Консультації з питань безпеки</a
+                >
+              </li>
+              <li>
+                <a href="./services/residential-security.html"
+                  >Охорона житла</a
+                >
+              </li>
+              <li>
+                <a href="./services/escort-service.html"
+                  >Супроводжувальний сервіс</a
+                >
+              </li>
+              <li>
+                <a href="./services/family-security.html">Безпека сім'ї</a>
+              </li>
+              <li>
+                <a href="./services/cctv-installation.html"
+                  >Встановлення відеоспостереження</a
+                >
+              </li>
+              <li>
+                <a href="./services/events-security.html"
+                  >Охорона заходів та ліцензованих приміщень</a
+                >
+              </li>
+              <li>
+                <a href="./services/drone-security.html">Система безпеки безпілотників AMG</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <h4 class="footer-title">Контакти</h4>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <p class="footer-contact-title">E-mail</p>
+              <a class="footer-contact" href="mailto:info@amgsecurity.uk"
+                >info@amgsecurity.uk</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contact-title">Номер телефону</p>
+              <a class="footer-contact" href="tel:+4412312543543"
+                >+44 12312543543</a
+              >
+            </li>
+          </ul>
+          <ul class="footer-links">
+            <li class="footer-link-item"><a href="#">Політика конфіденційності</a></li>
+            <li class="footer-link-item"><a href="#">Ліцензія</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/mobile-menu.js"></script>
+    <script src="../js/blog-slider.js"></script>
+  </body>
+</html>

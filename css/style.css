@@ -401,6 +401,10 @@ button {
     margin-bottom: 29px;
     width: 743px;
   }
+
+  .hero .title.ru {
+    width: 993px;
+  }
 }
 
 .hero-buttons-container {
@@ -565,6 +569,7 @@ button {
   .about .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -654,6 +659,7 @@ button {
   .mission .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -689,6 +695,10 @@ button {
     color: #fff;
     font-size: 18px;
     line-height: normal;
+  }
+
+  .mission .description.ru {
+    width: 458px;
   }
 }
 
@@ -1331,6 +1341,10 @@ button {
     margin-bottom: 15px;
     font-size: 76px;
     width: 100%;
+  }
+
+  .quiz .head.ua .title.ru {
+    font-size: 70px;
   }
 }
 
@@ -2285,12 +2299,20 @@ button {
   line-height: 1.1;
 }
 
+.questions-item .question-item-title.ru {
+  font-size: 15px;
+}
+
 @media screen and (min-width: 1440px) {
   .questions-item .question-item-title {
     width: 100%;
     color: #0f252e;
     font-size: 28px;
     line-height: normal;
+  }
+
+  .questions-item .question-item-title.ru {
+    font-size: 28px;
   }
 }
 
@@ -2903,6 +2925,10 @@ button {
   .about_us-why-prestigious .item .title {
     margin-bottom: 10px;
     font-size: 28px;
+  }
+
+  .about_us-why-prestigious .item .title.ru {
+    font-size: 27px;
   }
 }
 
