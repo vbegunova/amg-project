@@ -2420,6 +2420,10 @@ button {
   .footer-main.ua .footer-logo {
     margin-bottom: 370px;
   }
+
+  .footer-main.ru .footer-logo {
+    margin-bottom: 450px;
+  }
 }
 
 .footer .logo-emblema {
@@ -5000,8 +5004,13 @@ button {
   text-align: center;
 }
 
+.guards_skills-selection-process .title.ru {
+  width: 271px;
+}
+
 @media screen and (min-width: 1440px) {
-  .guards_skills-selection-process .title {
+  .guards_skills-selection-process .title,
+  .guards_skills-selection-process .title.ru {
     width: 939px;
     margin-bottom: 72px;
     font-size: 81px;
@@ -5648,8 +5657,8 @@ button {
   padding-top: 20px;
   padding-right: 18px;
   padding-left: 20px;
+  padding-bottom: 27px;
   width: 304px;
-  height: 165px;
   background-color: #0f252e;
 }
 
@@ -5659,7 +5668,7 @@ button {
     padding-right: 24px;
     padding-left: 26px;
     width: 400px;
-    height: 246px;
+    min-height: 246px;
   }
 }
 
