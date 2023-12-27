@@ -3263,11 +3263,17 @@ button {
 /* Service page Questions */
 .service_page.questions .question-item-title {
   font-size: 15px;
-  width: 230px;
+  width: 240px;
+}
+
+.service_page.questions .question-item-title.ru {
+  font-size: 13px;
+  width: 250px;
 }
 
 @media screen and (min-width: 1440px) {
-  .service_page.questions .question-item-title {
+  .service_page.questions .question-item-title,
+  .service_page.questions .question-item-title.ru {
     font-size: 28px;
     width: 100%;
   }
@@ -3291,6 +3297,10 @@ button {
 
 .cctv_monitoring.service_page.quote .title-container.ua .more-info {
   left: 210px;
+}
+
+.cctv_monitoring.service_page.quote .title-container.ru .more-info {
+  left: 304px;
 }
 
 /* CCTV Monitoring Hero */
@@ -3681,8 +3691,14 @@ button {
   line-height: normal;
 }
 
+.service_page-stages .item .text.ru {
+  font-size: 11px;
+}
+
+
 @media screen and (min-width: 1440px) {
-  .service_page-stages .item .text {
+  .service_page-stages .item .text,
+  .service_page-stages .item .text.ru {
     font-size: 18px;
   }
 }
@@ -3802,10 +3818,20 @@ button {
   width: 219px;
 }
 
+.estate_security.service_page.quote .title.ru {
+  width: 270px;
+}
+
 @media screen and (min-width: 1440px) {
   .estate_security.service_page.quote .title {
     width: 453px;
     margin-bottom: 21px;
+  }
+
+  .estate_security.service_page.quote .title.ua,
+  .estate_security.service_page.quote .title.ru {
+    width: 540px;
+    font-size: 61px;
   }
 }
 
@@ -3953,14 +3979,6 @@ button {
 }
 
 /* Escort Service Security About service */
-.escort_service.service_page-about-service .item:nth-child(1) {
-  padding-top: 13px;
-}
-
-.escort_service.service_page-about-service .item:nth-child(1) .title {
-  margin-bottom: 5px;
-}
-
 .escort_service.service_page-about-service .item .description {
   font-size: 11px;
 }
@@ -4055,7 +4073,7 @@ button {
   }
 
   .escort_service.service_page-stages .item:nth-child(5) {
-    padding-right: 127px;
+    padding-right: 17px;
   }
 
   .escort_service.service_page-stages .item:nth-child(5) .title {
@@ -4074,7 +4092,7 @@ button {
 }
 
 .escort_service.service_page.quote .title.ua {
-  width: 269px;
+  width: 270px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4086,6 +4104,12 @@ button {
 
   .escort_service.service_page.quote .title.ua {
     font-size: 61px;
+    width: 550px;
+  }
+
+  .escort_service.service_page.quote .title.ru {
+    font-size: 55px;
+    width: 550px;
   }
 }
 
@@ -4215,10 +4239,20 @@ button {
   width: 195px;
 }
 
+.personal_protection.service_page.quote .title.ru {
+  width: 270px;
+}
+
 @media screen and (min-width: 1440px) {
-  .personal_protection.service_page.quote .title {
+  .personal_protection.service_page.quote .title,
+  .personal_protection.service_page.quote .title.ua,
+  .personal_protection.service_page.quote .title.ru  {
     margin-bottom: 6px;
     width: 409px;
+  }
+
+  .personal_protection.service_page.quote .title.ru {
+    width: 550px;
   }
 }
 
@@ -4326,10 +4360,22 @@ button {
   width: 216px;
 }
 
+.security_consultancy.service_page.quote .title.ru {
+  width: 270px;
+}
+
 @media screen and (min-width: 1440px) {
-  .security_consultancy.service_page.quote .title {
+  .security_consultancy.service_page.quote .title,
+  .security_consultancy.service_page.quote .title.ua,
+  .security_consultancy.service_page.quote .title.ru {
     margin-bottom: 10px;
     width: 473px;
+  }
+
+  .security_consultancy.service_page.quote .title.ua,
+  .security_consultancy.service_page.quote .title.ru {
+    width: 550px;
+    font-size: 71px;
   }
 }
 
@@ -4462,7 +4508,7 @@ button {
   }
 
   .residential_security.service_page-stages .item:nth-child(6) {
-    padding-right: 95px;
+    padding-right: 23px;
   }
 
   .residential_security.service_page-stages .item:nth-child(6) .title {
@@ -4477,7 +4523,7 @@ button {
 }
 
 .residential_security.service_page.quote .title.ua {
-  width: 254px;
+  width: 270px;
 }
 
 @media screen and (min-width: 1440px) {
@@ -4766,8 +4812,13 @@ button {
   width: 232px;
 }
 
+.events_security.service_page.quote .title.ru {
+  width: 201px;
+}
+
 @media screen and (min-width: 1440px) {
-  .events_security.service_page.quote .title {
+  .events_security.service_page.quote .title,
+  .events_security.service_page.quote .title.ru {
     margin-bottom: 17px;
     width: 548px;
   }
@@ -4892,7 +4943,8 @@ button {
   width: 211px;
 }
 
-.drone_security.service_page.quote .title.ua {
+.drone_security.service_page.quote .title.ua,
+.drone_security.service_page.quote .title.ru {
   width: 270px;
 }
 
@@ -4902,6 +4954,10 @@ button {
     margin-bottom: 15px;
     font-size: 71px;
     width: 546px;
+  }
+
+  .drone_security.service_page.quote .title.ru {
+    font-size: 61px;
   }
 }
 
@@ -6026,6 +6082,12 @@ button {
   position: absolute;
   top: 0;
   left: 184px;
+}
+
+.case.quote .more-info.ru {
+  position: absolute;
+  top: 0;
+  left: 200px;
 }
 
 .case.quote .quote-text {
