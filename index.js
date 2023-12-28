@@ -48,16 +48,20 @@ function toggleModal(modal) {
     : "hidden";
 }
 
-openBtn.forEach((button) => button.addEventListener("click", () => {
-  toggleModal(modal);
-}));
+openBtn.forEach((button) =>
+  button.addEventListener("click", () => {
+    toggleModal(modal);
+  })
+);
 closeBtn.addEventListener("click", () => {
   toggleModal(modal);
 });
 
-heroOpenBtn.forEach((button) => button.addEventListener("click", () => {
-  toggleModal(heroModal);
-}));
+heroOpenBtn.forEach((button) =>
+  button.addEventListener("click", () => {
+    toggleModal(heroModal);
+  })
+);
 heroCloseBtn.addEventListener("click", () => {
   toggleModal(heroModal);
 });
