@@ -46,3 +46,58 @@ function toggleModal() {
 
 openBtn.forEach((button) => button.addEventListener("click", toggleModal));
 closeBtn.addEventListener("click", toggleModal);
+
+jQuery(document).ready(function () {
+     
+  // $(".phone").mask("+380 (99) 999-99-99"); 
+ 
+
+ jQuery('.form-button').click( function() {
+   var form = jQuery(this).closest('form');
+   
+   if ( form.valid() ) {
+    //  form.css('opacity','.5');
+     var actUrl = form.attr('action');
+    console.log(form.serialize());
+     jQuery.ajax({
+       url: actUrl,
+       type: 'post',
+       dataType: 'html',
+       data: form.serialize(),
+       success: function(data) {
+         form.html(data);
+        //  form.css('opacity','1');
+                 //form.find('.status').html('форма отправлена успешно');
+                 //$('#myModal').modal('show') // для бутстрапа
+       },
+       error:	 function() {
+            // form.find('.status').html('серверная ошибка');
+       }
+     });
+   }
+ });
+
+
+});
+
+// $(document).ready(function(){
+//   $('.form-button').click(function(e){
+//     e.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+
+//     var formData = $(this).serialize(); // Получаем данные формы
+
+//     $.ajax({
+//       type: 'POST',
+//       url: 'sender.php', // Путь к обработчику формы на сервере
+//       data: formData,
+//       success: function(response){
+//         // Действия при успешной отправке формы
+//         console.log('Форма успешно отправлена');
+//       },
+//       error: function(error){
+//         // Действия при ошибке отправки формы
+//         console.error('Ошибка отправки формы', error);
+//       }
+//     });
+//   });
+// });
