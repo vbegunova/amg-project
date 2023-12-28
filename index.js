@@ -37,66 +37,68 @@ const openBtn = document.querySelectorAll(".more-info");
 const closeBtn = document.querySelector(".close-modal-btn");
 const modal = document.querySelector(".backdrop");
 
-function toggleModal() {
-    modal.classList.toggle("is-hidden");
-    document.body.style.overflow = modal.classList.contains("is-hidden")
+const heroOpenBtn = document.querySelectorAll(".hero .button");
+const heroCloseBtn = document.querySelector(".hero-modal .close-modal-btn");
+const heroModal = document.querySelector(".hero-modal.backdrop");
+
+function toggleModal(modal) {
+  modal.classList.toggle("is-hidden");
+  document.body.style.overflow = modal.classList.contains("is-hidden")
     ? "auto"
     : "hidden";
 }
 
-openBtn.forEach((button) => button.addEventListener("click", toggleModal));
-closeBtn.addEventListener("click", toggleModal);
-
-jQuery(document).ready(function () {
-     
-  // $(".phone").mask("+380 (99) 999-99-99"); 
- 
-
- jQuery('.form-button').click( function() {
-   var form = jQuery(this).closest('form');
-   
-
-    //  form.css('opacity','.5');
-     var actUrl = form.attr('action');
-    console.log(form.serialize());
-     jQuery.ajax({
-       url: actUrl,
-       type: 'post',
-       dataType: 'html',
-       data: form.serialize(),
-       success: function(data) {
-         form.html(data);
-        //  form.css('opacity','1');
-                 //form.find('.status').html('форма отправлена успешно');
-                 //$('#myModal').modal('show') // для бутстрапа
-       },
-       error:	 function() {
-            // form.find('.status').html('серверная ошибка');
-       }
-     });
- });
-
-
+openBtn.forEach((button) => button.addEventListener("click", () => {
+  toggleModal(modal);
+}));
+closeBtn.addEventListener("click", () => {
+  toggleModal(modal);
 });
 
-// $(document).ready(function(){
-//   $('.form-button').click(function(e){
-//     e.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+heroOpenBtn.forEach((button) => button.addEventListener("click", () => {
+  toggleModal(heroModal);
+}));
+heroCloseBtn.addEventListener("click", () => {
+  toggleModal(heroModal);
+});
 
-//     var formData = $(this).serialize(); // Получаем данные формы
+jQuery(document).ready(function () {
+  jQuery(".form-button").click(function () {
+    var form = jQuery(this).closest("form");
+    var actUrl = form.attr("action");
 
-//     $.ajax({
-//       type: 'POST',
-//       url: 'sender.php', // Путь к обработчику формы на сервере
-//       data: formData,
-//       success: function(response){
-//         // Действия при успешной отправке формы
-//         console.log('Форма успешно отправлена');
-//       },
-//       error: function(error){
-//         // Действия при ошибке отправки формы
-//         console.error('Ошибка отправки формы', error);
-//       }
-//     });
-//   });
+    jQuery.ajax({
+      url: actUrl,
+      type: "post",
+      dataType: "html",
+      data: form.serialize(),
+      success: function (data) {},
+      error: function () {},
+    });
+  });
+});
+
+// document.querySelector('.form-button').addEventListener('click', function() {
+//   var form = document.querySelector('form');
+//   var formData = new FormData(form);
+
+//   // // Добавьте дополнительные данные, если нужно
+//   // formData.append('additionalParam', 'someValue');
+
+//   var xhr = new XMLHttpRequest();
+//   xhr.open('POST', 'sender.php', true);
+//   xhr.onload = function() {
+//     if (xhr.status === 200) {
+//       console.log('Success');
+//       console.log(xhr.responseText);
+//     } else {
+//       console.error('Error');
+//     }
+//   };
+//   xhr.onerror = function() {
+//     console.error('Network error');
+//   };
+
+//   // Отправка данных FormData через AJAX
+//   xhr.send(formData);
 // });
