@@ -55,7 +55,7 @@ jQuery(document).ready(function () {
  jQuery('.form-button').click( function() {
    var form = jQuery(this).closest('form');
    
-   if ( form.valid() ) {
+
     //  form.css('opacity','.5');
      var actUrl = form.attr('action');
     console.log(form.serialize());
@@ -74,7 +74,6 @@ jQuery(document).ready(function () {
             // form.find('.status').html('серверная ошибка');
        }
      });
-   }
  });
 
 
