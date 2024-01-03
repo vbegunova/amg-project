@@ -9,7 +9,7 @@ let principlesCurrentIndex = 0;
 let principlesTouchStartX = 0;
 let principlesTouchEndX = 0;
 
-let principlesClicksCount = 3;
+let principlesClicksCount = principlesSlides.length - 1;
 let principlesGap = 10;
 
 const principlesSlideWidth = principlesSlides[0].offsetWidth;

@@ -9,7 +9,7 @@ let opportunitiesCurrentIndex = 0;
 let opportunitiesTouchStartX = 0;
 let opportunitiesTouchEndX = 0;
 
-let opportunitiesClicksCount = 2;
+let opportunitiesClicksCount = opportunitiesSlides.length - 1;
 let opportunitiesGap = 10;
 
 const opportunitiesSlideWidth = opportunitiesSlides[0].offsetWidth;

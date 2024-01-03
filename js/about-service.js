@@ -9,7 +9,7 @@ let aboutServiceCurrentIndex = 0;
 let aboutServiceTouchStartX = 0;
 let aboutServiceTouchEndX = 0;
 
-let aboutServiceClicksCount = 3;
+let aboutServiceClicksCount = aboutServiceSlides.length - 1;
 let aboutServiceGap = 10;
 
 const aboutServiceSlideWidth = aboutServiceSlides[0].offsetWidth;

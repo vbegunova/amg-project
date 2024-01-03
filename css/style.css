@@ -338,6 +338,33 @@ button {
   line-height: 0.9;
 }
 
+.hero .title-slider-container {
+  width: 304px;
+  overflow: hidden;
+}
+
+.hero .title-box {
+  display: flex;
+  width: 304px;
+}
+
+.hero .title-box .item {
+  min-width: 305px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .title-box,
+  .hero .title-slider-container {
+    width: 1236px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .title-box .item {
+    min-width: 1237px;
+  }
+}
+
 .hero .title {
   font-size: 41px;
 }
@@ -392,18 +419,27 @@ button {
 
 .hero .title {
   margin-bottom: 16px;
-  width: 259px;
+  /* width: 259px; */
   color: #fff;
+}
+
+.hero .title.ru {
+  font-size: 40px;
 }
 
 @media screen and (min-width: 1440px) {
   .hero .title {
     margin-bottom: 29px;
-    width: 743px;
+    width: 864px;
   }
 
   .hero .title.ru {
+    font-size: 81px;
     width: 993px;
+  }
+
+  .hero .title.ua {
+    width: 1146px;
   }
 }
 
@@ -3393,7 +3429,7 @@ button {
 .cctv_monitoring.service_page.quote .more-info {
   position: absolute;
   top: 0;
-  left: 178px;
+  left: 304px;
 }
 
 .cctv_monitoring.service_page.quote .title-container.ua .more-info {

@@ -9,7 +9,7 @@ let stagesCurrentIndex = 0;
 let stagesTouchStartX = 0;
 let stagesTouchEndX = 0;
 
-let stagesClicksCount = 5;
+let stagesClicksCount = stagesSlides.length - 1;
 let stagesGap = 10;
 
 const stagesSlideWidth = stagesSlides[0].offsetWidth;

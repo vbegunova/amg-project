@@ -9,7 +9,7 @@ let audienceCurrentIndex = 0;
 let audienceTouchStartX = 0;
 let audienceTouchEndX = 0;
 
-let audienceClicksCount = 4;
+let audienceClicksCount = audienceSlides.length - 2;
 let audienceGap = 14;
 const audienceSlideWidth = audienceSlides[0].offsetWidth;
 

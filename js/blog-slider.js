@@ -9,7 +9,7 @@ let blogCurrentIndex = 0;
 let blogTouchStartX = 0;
 let blogTouchEndX = 0;
 
-let blogClicksCount = 2;
+let blogClicksCount = blogSlides.length - 1;
 let blogGap = 10;
 
 const blogSlideWidth = blogSlides[0].offsetWidth;

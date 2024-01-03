@@ -9,7 +9,7 @@ let selectionProcessCurrentIndex = 0;
 let selectionProcessTouchStartX = 0;
 let selectionProcessTouchEndX = 0;
 
-let selectionProcessClicksCount = 2;
+let selectionProcessClicksCount = selectionProcessSlides.length - 1;
 let selectionProcessGap = 10;
 
 const selectionProcessSlideWidth = selectionProcessSlides[0].offsetWidth;

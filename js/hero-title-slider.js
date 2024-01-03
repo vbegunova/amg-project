@@ -1,48 +1,53 @@
-const titles = [
-    "Improve security standards with our proven solutions",
-    "AMG's promise:<br />precision security,<br />no hidden costs! ",
-    "Take advantage of<br />premium security services<br />tailored to your needs",
-  ];
-  
-  let currentTitle = 0;
-  const titleElement = document.querySelector(".hero-title");
-  
-  function changeTitle() {
-    if(window.innerWidth >= 1440) {
-      if (currentTitle === 2) {
-        titleElement.style.width = "100%";
-      } else {
-        titleElement.style.width = "621px";
-      }
-    }
-    titleElement.innerHTML = titles[currentTitle];
-  }
-  
-  changeTitle();
-  
-  function nextTitle() {
+const titleBox = document.querySelector('.hero .title-box');
+const titles = document.querySelectorAll('.hero .title-box .item');
+let currentTitle = 0;
+
+const titleSlideWidth = titles[0].offsetWidth;
+
+function changeTitle() {
+  titleElement.innerHTML = titles[currentTitle];
+}
+
+function changeTitle(index) {
+  titleBox.style.transition = "transform 0.4s ease-in-out";
+  titleBox.style.transform = `translateX(-${
+    index * titleSlideWidth
+  }px)`;
+}
+
+if (window.innerWidth < 1440) {
+  setInterval(() => {
+    console.log('fewfew');
     currentTitle++;
     if (currentTitle >= titles.length) {
       currentTitle = 0;
     }
-    changeTitle();
+    changeTitle(currentTitle);
+  }, 5000)
+}
+
+function nextTitle() {
+  currentTitle++;
+  if (currentTitle >= titles.length) {
+    currentTitle = 0;
   }
-  
-  function prevTitle() {
-    currentTitle--;
-    if (currentTitle < 0) {
-      currentTitle = titles.length - 1;
-    }
-    changeTitle();
+  changeTitle(currentTitle);
+}
+
+function prevTitle() {
+  currentTitle--;
+  if (currentTitle < 0) {
+    currentTitle = titles.length - 1;
   }
-  
-  const nextButtonHero = document.querySelector(
-    ".hero-slider-button:last-of-type"
-  );
-  const prevButtonHero = document.querySelector(
-    ".hero-slider-button:first-of-type"
-  );
-  
-  nextButtonHero.addEventListener("click", nextTitle);
-  prevButtonHero.addEventListener("click", prevTitle);
-  
+  changeTitle(currentTitle);
+}
+
+const nextButtonHero = document.querySelector(
+  ".hero-slider-button:last-of-type"
+);
+const prevButtonHero = document.querySelector(
+  ".hero-slider-button:first-of-type"
+);
+
+nextButtonHero.addEventListener("click", nextTitle);
+prevButtonHero.addEventListener("click", prevTitle);

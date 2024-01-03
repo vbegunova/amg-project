@@ -9,7 +9,7 @@ let whyTrustCurrentIndex = 0;
 let whyTrustTouchStartX = 0;
 let whyTrustTouchEndX = 0;
 
-let whyTrustClicksCount = 2;
+let whyTrustClicksCount = whyTrustSlides.length - 1;
 let whyTrustGap = 10;
 
 const whyTrustSlideWidth = whyTrustSlides[0].offsetWidth;

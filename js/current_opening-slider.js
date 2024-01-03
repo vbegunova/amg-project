@@ -9,7 +9,7 @@ let currentOpeningCurrentIndex = 0;
 let currentOpeningTouchStartX = 0;
 let currentOpeningTouchEndX = 0;
 
-let currentOpeningClicksCount = 2;
+let currentOpeningClicksCount = currentOpeningSlides.length - 1;
 let currentOpeningGap = 10;
 
 const currentOpeningSlideWidth = currentOpeningSlides[0].offsetWidth;

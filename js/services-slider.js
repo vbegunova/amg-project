@@ -7,7 +7,7 @@ let servicesCurrentIndex = 0;
 let servicesTouchStartX = 0;
 let servicesTouchEndX = 0;
 
-let servicesClicksCount = 9;
+let servicesClicksCount = servicesSlides.length - 1;
 let servicesGap = 10;
 
 const servicesSlideWidth = servicesSlides[0].offsetWidth;

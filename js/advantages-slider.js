@@ -9,7 +9,7 @@ let advCurrentIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
 
-let clicksCount = 9;
+let clicksCount = advantagesSlides.length - 1;
 let advGap = 10;
 
 const slideWidth = advantagesSlides[0].offsetWidth;

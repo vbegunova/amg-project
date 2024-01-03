@@ -9,7 +9,7 @@ let prestigiousCurrentIndex = 0;
 let prestigiousTouchStartX = 0;
 let prestigiousTouchEndX = 0;
 
-let prestigiousClicksCount = 7;
+let prestigiousClicksCount = prestigiousSlides.length - 1;
 let prestigiousGap = 10;
 
 const prestigiousSlideWidth = prestigiousSlides[0].offsetWidth;
