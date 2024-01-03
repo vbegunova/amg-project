@@ -4,10 +4,6 @@ let currentTitle = 0;
 
 const titleSlideWidth = titles[0].offsetWidth;
 
-function changeTitle() {
-  titleElement.innerHTML = titles[currentTitle];
-}
-
 function changeTitle(index) {
   titleBox.style.transition = "transform 0.4s ease-in-out";
   titleBox.style.transform = `translateX(-${
