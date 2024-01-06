@@ -13,7 +13,6 @@ function changeTitle(index) {
 
 if (window.innerWidth < 1440) {
   setInterval(() => {
-    console.log('fewfew');
     currentTitle++;
     if (currentTitle >= titles.length) {
       currentTitle = 0;
